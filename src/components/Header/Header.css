@@ -1,0 +1,51 @@
+#Header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    background-color: var(--Principal);
+    background-color: #2BFC3D;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Header .fondo.derecha{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 0;
+
+    height: 100%;
+    width: auto;
+}
+#Header .fondo.izquierda{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    height: 100%;
+    width: auto;
+}
+
+#Header h1{
+    color: var(--Claro);
+    color: black;
+    font-size: 8rem;
+    text-transform: uppercase;
+
+    margin-bottom: 0px;
+    margin-top: 0;
+
+    z-index: 1;
+}
+#Header span{
+    color: var(--Claro);
+    color: black;
+    text-transform: uppercase;
+}

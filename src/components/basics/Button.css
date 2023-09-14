@@ -1,0 +1,90 @@
+.button {
+    position: relative;
+
+    height: 40px;
+    width: max-content;
+
+    cursor: pointer;
+
+    background-color: transparent;
+    border: none;
+
+    display: block;
+
+    margin: 0;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.button:hover .sombra {
+    top: 10px;
+    left: 5px;
+
+    opacity: 100%;
+}
+
+.button .texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    /* width: 90px; */
+
+    width: fit-content;
+
+    margin: 0;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    background-color: var(--Acento1);
+    background-color: #FFFA01;
+    color: var(--Oscuro);
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    text-wrap: nowrap;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--Oscuro);
+    border-color: black;
+    border-radius: 50px;
+}
+
+.button .sombra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    height: 40px;
+    /* width: 90px; */
+    width: fit-content;
+
+    margin: 0;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    background-color: var(--Oscuro);
+    background-color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    text-wrap: nowrap;
+    opacity: 0%;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--Oscuro);
+    border-radius: 50px;
+
+    transition: all 0.3s;
+}

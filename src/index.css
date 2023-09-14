@@ -1,5 +1,14 @@
+:root {
+  --Principal: #6A994E;
+  --Oscuro: #3E442B;
+  --Claro: #FFFCFF;
+  --Acento1: #FAF33E;
+  --Acento2: #351431;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +19,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app {
+  width: 100%;
+  height: fit-content;
 }
