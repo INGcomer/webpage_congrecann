@@ -1,7 +1,4 @@
 #AboutUs {
-    /* height: 100vh; */
-    /* height: fit-content; */
-
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -118,4 +115,55 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+@media (max-width: 500px) {
+    #AboutUs {
+        flex-direction: column;
+        align-items: center;
+    }
+    #AboutUs .fondo{
+        height: 100%;
+        width: auto;
+    }
+
+    #AboutUs .pilares {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #AboutUs .pilar {
+        margin-top: 0;
+    }
+    
+    #AboutUs .pilar .icono {
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+        border-width: 3px;
+        border-top-right-radius: 25px;
+    }
+    
+    #AboutUs .pilar .icono img{
+        height: 50px;
+    }
+    
+    #AboutUs .pilar .texto{
+        display: none;
+    }
+
+    #AboutUs .descripcion{
+        width: 80%;
+        margin-top: 50px;
+    }
+    
+    #AboutUs .descripcion .titulo{
+        height: 60px;
+        font-size: 2rem;
+    }
+    #AboutUs .descripcion .parrafo{
+        padding: 20px;
+    }
 }

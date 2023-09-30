@@ -84,3 +84,25 @@
     color: var(--Principal);
     font-size: 1.5rem;
 }
+
+
+@media (max-width: 500px) {
+    #Entradas {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #Entradas h2{
+        margin-bottom: 50px;
+    }
+
+    #Entradas .entradas {
+        width: 80%;
+    }
+    #Entradas .entradas .simple{
+        flex-direction: column;
+        align-items: center;
+
+        gap: 25px;
+    }
+}

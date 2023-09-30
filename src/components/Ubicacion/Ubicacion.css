@@ -48,3 +48,19 @@
 
     overflow: hidden;
 }
+
+@media (max-width: 500px) {
+    #Ubicacion{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #Ubicacion .direccion{
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    #Ubicacion .fondo{
+        height: 100%;
+        width: auto;
+    }
+}

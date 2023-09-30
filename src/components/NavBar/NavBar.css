@@ -30,3 +30,12 @@ nav .central {
 nav div.izquierda img{
     height: 50px;
 }
+
+@media (max-width: 500px) {
+    /* nav .izquierda, nav .derecha {
+        width: 15%;
+    } */
+    nav .derecha, nav .precindible {
+        display: none;
+    }
+}

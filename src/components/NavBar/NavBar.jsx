@@ -12,16 +12,16 @@ export default function NavBar() {
                 </a>
             </div>
             <div className="central">
-                <a href="#AboutUs">
+                <a href="#AboutUs" >
                     <Button> Pilares </Button>
                 </a>
                 <a href="#Entradas">
                     <Button> Entradas </Button>
                 </a>
-                <a href="#Ubicacion">
+                <a href="#Ubicacion" className='precindible'>
                     <Button> Ubicación </Button>
                 </a>
-                <a href="">
+                <a href="" className='precindible'>
                     <Button> Contacto </Button>
                 </a>
             </div>

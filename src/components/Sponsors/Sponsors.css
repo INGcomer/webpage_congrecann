@@ -1,5 +1,8 @@
 #Sponsors {
     height: 300px;
+    height: fit-content;
+
+    padding-bottom: 50px;
 
     background-color: var(--Acento2);
     color: var(--Principal);
@@ -23,3 +26,11 @@
     width: auto;
 
 }
+
+@media (max-width: 500px) {
+    #Sponsors .swiper img{
+        height: 50px;
+        width: auto;
+    }
+}
+
