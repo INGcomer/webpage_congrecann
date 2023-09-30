@@ -1,0 +1,25 @@
+#Sponsors {
+    height: 300px;
+
+    background-color: var(--Acento2);
+    color: var(--Principal);
+    font-size: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Sponsors .swiper {
+    width: 100%;
+
+}
+#Sponsors .swiper .swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+#Sponsors .swiper img{
+    height: 100px;
+    width: auto;
+
+}

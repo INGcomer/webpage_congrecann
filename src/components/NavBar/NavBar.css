@@ -15,8 +15,18 @@ nav {
 nav div{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     gap: 50px;
+}
+nav .izquierda, nav .derecha {
+    width: 15%;
+}
+nav .central {
+    width: 70%;
+}
+
+nav div.izquierda img{
+    height: 50px;
 }

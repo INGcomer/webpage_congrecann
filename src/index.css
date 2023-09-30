@@ -1,9 +1,13 @@
 :root {
-  --Principal: #6A994E;
-  --Oscuro: #3E442B;
-  --Claro: #FFFCFF;
-  --Acento1: #FAF33E;
-  --Acento2: #351431;
+  --Principal: #ffffff;
+  --Oscuro: #001516;
+  --Acento1: #97cb33;
+  --Acento2: #037171;
+  --Acento3: #FFB6B4;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body {

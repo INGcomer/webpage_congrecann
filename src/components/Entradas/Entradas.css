@@ -1,0 +1,86 @@
+#Entradas {
+    /* height: 100vh; */
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: var(--Acento3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Entradas h2{
+    font-size: 3rem;
+
+    color: var(--Oscuro);
+
+    margin-bottom: 100px;
+}
+
+
+#Entradas .entradas {
+    width: 60%;
+}
+#Entradas .entradas .simple{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+#Entradas .entradas .entrada{
+    height: 200px;
+    width: 300px;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    background-color: var(--Acento2);
+
+    border-style: solid;
+    border-width: 5px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-color: var(--Oscuro);
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#Entradas .entradas .entrada.completa{
+    background-color: var(--Acento1);
+}
+#Entradas .entradas .completa .entrada{
+    height: 200px;
+    width: 100%;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    background-color: var(--Acento1);
+
+    border-style: solid;
+    border-width: 5px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-color: var(--Oscuro);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#Entradas .entradas .entrada .dia{
+    color: var(--Principal);
+
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#Entradas .entradas .entrada .precio{
+    color: var(--Principal);
+    font-size: 1.5rem;
+}

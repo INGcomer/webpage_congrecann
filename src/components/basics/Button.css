@@ -44,10 +44,13 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    background-color: var(--Acento1);
-    background-color: #FFFA01;
+    background-color: var(--Acento2);
+    background-color: var(--Principal);
+    /* background-color: #FFFA01; */
     color: var(--Oscuro);
-    color: black;
+    color: var(--Principal);
+    color: var(--Acento2);
+    /* color: black; */
     font-size: 1rem;
     font-weight: bold;
     text-wrap: nowrap;
@@ -55,7 +58,7 @@
     border-width: 2px;
     border-style: solid;
     border-color: var(--Oscuro);
-    border-color: black;
+    /* border-color: var(--Principal); */
     border-radius: 50px;
 }
 
@@ -75,7 +78,8 @@
     padding-bottom: 0;
 
     background-color: var(--Oscuro);
-    background-color: black;
+    /* background-color: var(--Principal); */
+    /* background-color: black; */
     font-size: 1rem;
     font-weight: bold;
     text-wrap: nowrap;
@@ -84,6 +88,7 @@
     border-width: 2px;
     border-style: solid;
     border-color: var(--Oscuro);
+    /* border-color: var(--Principal); */
     border-radius: 50px;
 
     transition: all 0.3s;
