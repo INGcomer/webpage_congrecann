@@ -7,6 +7,9 @@ import Header from './components/Header/Header';
 import Sponsors from './components/Sponsors/Sponsors';
 import AboutUs from './components/AboutUs/AboutUs';
 import Entradas from './components/Entradas/Entradas';
+import Ubicacion from './components/Ubicacion/Ubicacion';
+import Contacto from './components/Contacto/Contacto';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
       <Sponsors/>
       <AboutUs/>
       <Entradas/>
+      <Ubicacion/>
+      <Contacto/>
+      <Footer/>
 
 
     </div>

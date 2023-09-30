@@ -1,0 +1,49 @@
+#contacto{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-color: var(--Acento1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto h2 {
+    font-size: 2.5rem;
+}
+
+#contacto form {
+    width: 80%;
+
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contacto form button{
+    background-color: transparent;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 500px) {
+    #contacto .title {
+        margin-left: 0px;
+        gap: 25px;
+    }
+
+    #contacto .title img {
+        height: 30px;
+    }
+
+    #contacto .title h2 {
+        font-size: 2rem;
+    }
+}

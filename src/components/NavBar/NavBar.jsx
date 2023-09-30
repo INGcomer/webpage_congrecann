@@ -18,7 +18,7 @@ export default function NavBar() {
                 <a href="#Entradas">
                     <Button> Entradas </Button>
                 </a>
-                <a href="">
+                <a href="#Ubicacion">
                     <Button> Ubicación </Button>
                 </a>
                 <a href="">
