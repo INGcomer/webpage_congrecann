@@ -29,7 +29,7 @@ export default function Ubicacion() {
 
             <div className='direccion'>
                 <div className='texto'>
-                    <h3> Auditorio "Ángel Bustelo" </h3>
+                    <h3> Centro de Congresos y Exposiciones Dr. Emilio Civit </h3>
                     <small> Virgen del Carmen de Cuyo 610, M5500 Mendoza </small>
                 </div>
                 <a href="https://www.google.com/maps/place/Auditorium+Angel+Bustelo/@-32.8980824,-68.8526397,17z/data=!3m1!4b1!4m6!3m5!1s0x967e090e883d34e5:0xa7e2f899c46ce069!8m2!3d-32.8980824!4d-68.8500648!16s%2Fg%2F1tdqvrfs?entry=ttu">
@@ -52,8 +52,8 @@ export default function Ubicacion() {
                 {/* <Marker position={[-32.8980, -68.8500]} icon={icon}> */}
                 <Marker position={[-32.8973, -68.8504]}>
                     <Popup>
-                        Auditorio "Ángel Bustelo"
-
+                        Centro de Congresos y Exposiciones Dr. Emilio Civit
+                        <br />
                         <a href="https://www.google.com/maps/place/Auditorium+Angel+Bustelo/@-32.8980824,-68.8526397,17z/data=!3m1!4b1!4m6!3m5!1s0x967e090e883d34e5:0xa7e2f899c46ce069!8m2!3d-32.8980824!4d-68.8500648!16s%2Fg%2F1tdqvrfs?entry=ttu"> Ver en google maps </a>
                     </Popup>
                 </Marker>

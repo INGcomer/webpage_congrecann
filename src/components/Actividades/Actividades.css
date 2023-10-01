@@ -1,0 +1,85 @@
+#Actividades{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+#Actividades .fondo{
+    position: absolute;
+
+    opacity: 20%;
+
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: auto;
+
+    z-index: 1;
+}
+
+#Actividades h2{
+    font-size: 2.5rem;
+
+    margin-bottom: 50px;
+}
+
+#Actividades .container{
+    width: 80%;
+
+    z-index: 2;
+}
+
+#Actividades .container .actividad{
+    width: 100%;
+    height: 200px;
+
+    margin-bottom: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+#Actividades .container .actividad.invertida{
+    flex-direction: row-reverse;
+}
+
+#Actividades .container .actividad .texto{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#Actividades .container .actividad .texto h3{
+    font-size: 2rem;
+}
+
+#Actividades .container .actividad .carrucel{
+    width: 50%;
+    /* background-color: red; */
+}
+
+#Actividades .swiper {
+    width: 100%;
+    height: 100%;
+
+}
+#Actividades .swiper .swiper-slide{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#Actividades .container .actividad.invertida .swiper .swiper-slide{
+    justify-content: flex-start;
+}
+#Actividades .swiper img{
+    height: 100%;
+    width: auto;
+
+}

@@ -1,0 +1,15 @@
+#TextoIntermedio{
+    height: 200px;
+
+    background-color: var(--Acento2);
+    color: var(--Principal);
+    font-size: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#TextoIntermedio p{
+    width: 80%;
+}

@@ -12,8 +12,8 @@ export default function NavBar() {
                 </a>
             </div>
             <div className="central">
-                <a href="#AboutUs" >
-                    <Button> Pilares </Button>
+                <a href="#Actividades" >
+                    <Button> Sobre el Congreso </Button>
                 </a>
                 <a href="#Entradas">
                     <Button> Entradas </Button>
