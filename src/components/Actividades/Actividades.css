@@ -79,7 +79,34 @@
     justify-content: flex-start;
 }
 #Actividades .swiper img{
-    height: 100%;
+    height: 200px;
     width: auto;
 
+}
+
+@media (max-width: 500px) {
+    #Actividades .container .actividad{
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+
+        text-align: center;
+    }
+    #Actividades .container .actividad.invertida{
+        flex-direction: column;
+    }
+
+    #Actividades .container .actividad .texto{
+        width: 80%;
+    }
+    
+    #Actividades .container .actividad .carrucel{
+        width: 80%;
+    }
+    #Actividades .container .actividad {
+        align-items: center;
+    }
+    #Actividades .swiper .swiper-slide {
+        justify-content: center;
+    }
 }
