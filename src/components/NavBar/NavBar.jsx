@@ -21,7 +21,7 @@ export default function NavBar() {
                 <a href="#Ubicacion" className='precindible'>
                     <Button> Ubicación </Button>
                 </a>
-                <a href="" className='precindible'>
+                <a href="#contacto" className='precindible'>
                     <Button> Contacto </Button>
                 </a>
             </div>
