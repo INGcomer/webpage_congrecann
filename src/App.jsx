@@ -19,15 +19,15 @@ function App() {
       <NavBar/>
       <Header/>
 
-      <TextoIntermedio/>
+      {/* <TextoIntermedio/> */}
 
-      <Actividades/>
+      {/* <Actividades/> */}
 
-      <Sponsors/>
+      {/* <Sponsors/> */}
 
-      <AboutUs/>
-      <Entradas/>
-      <Ubicacion/>
+      {/* <AboutUs/> */}
+      {/* <Entradas/> */}
+      {/* <Ubicacion/> */}
       <Contacto/>
       <Footer/>
 

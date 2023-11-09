@@ -1,9 +1,9 @@
 :root {
-  --Principal: #ffffff;
-  --Oscuro: #001516;
-  --Acento1: #97cb33;
-  --Acento2: #037171;
-  --Acento3: #FFB6B4;
+  --Principal: #f3f5ee;
+  --Oscuro: #2a3430;
+  --Acento1: #bfd56a;
+  --Acento2: #bfd56a;
+  --Acento3: #d5b58c;
 }
 
 html{

@@ -8,13 +8,15 @@
     flex-direction: column;
 
     overflow: hidden;
+
+    --Color:  var(--Acento3);
 }
 
 #footer .menu_container{
     height: 100px;
     width: 100%;
 
-    color: var(--Acento2);
+    color: var(--Color);
 
     display: flex;
     justify-content: space-around;
@@ -30,7 +32,7 @@
    border-radius: 50px;
 
    background-color: var(--Principal);
-   color: var(--Acento2);
+   color: var(--Color);
 }
 
 #footer .menu_container .redes{
@@ -44,7 +46,7 @@
    width: 50px;
    border-radius: 50px;
 
-   background-color:  var(--Acento2);
+   background-color:  var(--Color);
    color: var(--Principal);
 
    display: flex;
@@ -92,7 +94,7 @@
     transition: fill 1s;
 }
 #footer .ingcome_sofweare svg{
-    fill: var(--Acento2);
+    fill: var(--Color);
 }
 
 
