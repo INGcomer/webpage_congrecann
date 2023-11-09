@@ -3,8 +3,8 @@
     height: 100vh;
     width: 100%;
 
-    background-color: var(--Principal);
-    /* background-color: var(--Oscuro); */
+    /* background-color: var(--Principal); */
+    background-color: var(--Oscuro);
     /* background-color: #2BFC3D; */
 
     overflow: hidden;
@@ -12,56 +12,136 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    justify-content: flex-end;
+    justify-content: center;
+    /* justify-content: flex-end; */
 
 }
 
-.cls-1 {
-    fill: #2a3330;
+#Header .titleBackGraund {
+    height: 300px;
+    width: 120%;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--Acento1);
+
+    transform: rotate(-2.5deg);
+}
+
+#Header .titleBackGraund svg {
+    height: 50%;
+    width: auto;
+}
+
+#Header .titleBackGraund .cls-1 {
+    fill: var(--Oscuro);
+}
+
+#Header .DataIzquierda {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    z-index: 2;
+
+    color: var(--Principal);
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#Header .DataIzquierda #Capa_1 {
+    height: 50px;
+    width: auto;
+}
+
+#Header .DataIzquierda .cls-1 {
+    fill: var(--Principal);
+}
+
+#Header .fechas{
+    position: absolute;
+    bottom: -30px;
+
+    height: 100px;
+    width: 200px;
+}
+
+#Header .fechas .cls-1 {
+    fill: var(--Acento1);
     stroke-width: 0px;
 }
 
-#Header .fondo {
+#Header .fechas .cls-2 {
+    letter-spacing: 0em;
+}
+
+#Header .fechas .cls-3 {
+    fill: var(--Oscuro);
+    font-size: 80.87px;
+    font-weight: 700;
+}
+
+#Header .fechas .cls-4 {
+    letter-spacing: 0em;
+}
+
+#Header .background {
     position: absolute;
 
-    top: -200px;
-    top: 00px;
-
-    opacity: 20%;
-
-    /* height: 100%; */
+    width: 1000px;
     height: auto;
-    width: 150%;
+
+    opacity: 10%;
 
     z-index: 1;
 }
 
-#Header .logo {
-    margin-bottom: 200px;
-    height: 150px;
-
-    z-index: 2;
+#Header .background .cls-1 {
+    fill: black;
 }
 
-#Header .fechas {
-    height: 50px;
+#Header .background.uno {
+    top: -300px;
+    left: -50px;
 
-    margin-bottom: 20px;
+    transform: rotate(20deg);
+}
 
-    z-index: 2;
+#Header .background.dos {
+    top: 500px;
+    right: -10px;
+
+    transform: rotate(-60deg);
+}
+
+#Header .background.tres {
+    top: -600px;
+    right: 0;
+
+    transform: rotate(-30deg);
+}
+
+#Header .textura {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 3;
+
+    mix-blend-mode: hard-light;
+    /* mix-blend-mode: soft-light; */
+    mix-blend-mode: multiply;
+
+    opacity: 30%;
 }
 
 
-@media (max-width: 500px) {
-    #Header .fondo {
-        height: 100%;
-        width: auto;
-    }
 
-    #Header .logo {
-        height: 150px;
-
-        z-index: 2;
-    }
-}
+@media (max-width: 500px) {}

@@ -49,7 +49,10 @@ export default function NavBar() {
 
             </div>
             <div className="derecha">
-                <Button>  INSCRIBIRSE  </Button>
+                {/* <Button>  INSCRIBIRSE  </Button> */}
+                <a href="#contacto">
+                    <Button>  Mantenete informado  </Button>
+                </a>
             </div>
         </nav>
     );

@@ -1,23 +1,24 @@
+@import url("https://use.typekit.net/lyn4lpb.css");
+
 :root {
   --Principal: #f3f5ee;
   --Oscuro: #2a3430;
   --Acento1: #bfd56a;
-  --Acento2: #bfd56a;
-  --Acento3: #d5b58c;
+  --Acento2: #d5b58c;
+  /* --Acento3: #d5b58c; */
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  font-family: "acumin-pro", sans-serif;
 }
 
 code {

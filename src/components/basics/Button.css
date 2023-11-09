@@ -44,12 +44,12 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    background-color: var(--Acento2);
-    /* background-color: var(--Acento3); */
-    /* background-color: var(--Principal); */
+    /* background-color: var(--Acento2); */
+    /* background-color: var(--Oscuro); */
+    background-color: var(--Principal);
     /* background-color: #FFFA01; */
     color: var(--Oscuro);
-    /* color: var(--Acento3); */
+    /* color: var(--Acento1); */
     /* color: var(--Principal); */
     font-size: 1rem;
     font-weight: bold;

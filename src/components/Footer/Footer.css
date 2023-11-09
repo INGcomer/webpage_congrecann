@@ -9,14 +9,17 @@
 
     overflow: hidden;
 
-    --Color:  var(--Acento3);
+    background-color: var(--Oscuro);
+
+    --Color1:  var(--Acento1);
+    --Color2:  var(--Principal);
 }
 
 #footer .menu_container{
     height: 100px;
     width: 100%;
 
-    color: var(--Color);
+    color: var(--Color2);
 
     display: flex;
     justify-content: space-around;
@@ -31,8 +34,8 @@
    width: 200px;
    border-radius: 50px;
 
-   background-color: var(--Principal);
-   color: var(--Color);
+   background-color: var(--Color2);
+   color: var(--Color1);
 }
 
 #footer .menu_container .redes{
@@ -46,8 +49,8 @@
    width: 50px;
    border-radius: 50px;
 
-   background-color:  var(--Color);
-   color: var(--Principal);
+   background-color:  var(--Color2);
+   color: var(--Color1);
 
    display: flex;
    align-items: center;
@@ -77,7 +80,7 @@
     height: 3px;
     width: 90%;
 
-    background-color: var(--Oscuro);
+    background-color: var(--Color2);
 }
 
 #footer .ingcome_sofweare{
@@ -93,8 +96,11 @@
 #footer .ingcome_sofweare svg .cls-1, #footer .ingcome_sofweare svg .cls-2{
     transition: fill 1s;
 }
-#footer .ingcome_sofweare svg{
-    fill: var(--Color);
+#footer .ingcome_sofweare svg .cls-1{
+    fill: var(--Color2);
+}
+#footer .ingcome_sofweare svg .cls-2{
+    fill: var(--Color2);
 }
 
 
