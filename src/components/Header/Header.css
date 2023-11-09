@@ -68,6 +68,8 @@
 
     height: 100px;
     width: 200px;
+
+    z-index: 2;
 }
 
 #Header .fechas .cls-1 {
@@ -143,5 +145,73 @@
 }
 
 
+@media (max-width: 1400px) {
+    #Header .titleBackGraund {
+        height: 150px;
+    }
 
-@media (max-width: 500px) {}
+    #Header .DataIzquierda {
+        font-size: 1rem;
+    }
+    
+    #Header .DataIzquierda #Capa_1 {
+        height: 25px;
+    }
+
+    #Header .background {
+        width: 700px;
+    }
+    
+    #Header .background.dos {
+        top: 300px;
+    }
+    
+    #Header .background.tres {
+        top: -400px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    #Header .titleBackGraund {
+        height: 100px;
+    }
+
+    #Header .titleBackGraund svg {
+        height: 45%;
+        width: auto;
+    }
+
+    #Header .DataIzquierda {
+        font-size: 0.8rem;
+    }
+
+    #Header .background {
+        position: absolute;
+    
+        width: 300px;
+        height: auto;
+    
+        opacity: 10%;
+    
+        z-index: 1;
+    }
+
+    #Header .background.uno {
+        top: 00px;
+        right: -0px;
+    }
+    #Header .background.dos {
+        top: 300px;
+        right: -50px;
+    }
+    
+    #Header .background.tres {
+        top: -00px;
+        right: -100px;
+
+        display: none;
+    }
+
+    
+}

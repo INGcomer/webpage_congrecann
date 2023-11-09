@@ -51,7 +51,7 @@ export default function NavBar() {
             <div className="derecha">
                 {/* <Button>  INSCRIBIRSE  </Button> */}
                 <a href="#contacto">
-                    <Button>  Mantenete informado  </Button>
+                    <Button className="customButtom" >  Mantenete informado  </Button>
                 </a>
             </div>
         </nav>
