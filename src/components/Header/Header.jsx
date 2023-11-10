@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 import './Header.css';
 
 // import fondo from './img/mapa topografico.png'

@@ -1,12 +1,12 @@
 import './Button.css';
 
-export default function Button(props) {
+export default function Button({children, link}) {
     return (
-        <a className='button'>
-            <div className='texto'> {props.children} </div>
-            <div className='sombra'> {props.children} </div>
+            <a className='button' href={link}>
+            <div className='texto'> {children} </div>
+            <div className='sombra'> {children} </div>
 
-            {props.children}
+            {children}
         </a>
     );
 }

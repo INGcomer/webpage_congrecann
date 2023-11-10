@@ -6,14 +6,6 @@ nav {
     width: 100%;
     height: fit-content;
 
-    /* background-color: white; */
-    background-color: var(--Acento1);
-    border-style: solid;
-    border-width: 3px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-color: var(--Oscuro);
-
     margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -23,7 +15,7 @@ nav {
 }
 
 .cls-1 {
-    fill: #2a3330;
+    fill: var(--Principal);
     stroke-width: 0px;
 }
 
@@ -34,6 +26,27 @@ nav div {
     align-items: center;
 
     gap: 50px;
+}
+
+nav a {
+    color: var(--Principal);
+    text-decoration: none;
+
+    font-weight: 400;
+    font-style: normal;
+
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-color: transparent;
+
+    transition: all 0.25s;
+}
+nav a:hover{
+    border-color: var(--Acento1);
+}
+nav a.logo:hover{
+    border-color: transparent;
 }
 
 nav .izquierda,
