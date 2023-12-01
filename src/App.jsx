@@ -4,6 +4,7 @@ import logo from './logo.svg';
 
 import NavBar from './components/NavBar/NavBar';
 import Header from './components/Header/Header';
+import Contador from './components/Contador/Contador';
 import Sponsors from './components/Sponsors/Sponsors';
 import AboutUs from './components/AboutUs/AboutUs';
 import Entradas from './components/Entradas/Entradas';
@@ -18,6 +19,8 @@ function App() {
     <div className="App">
       <NavBar/>
       <Header/>
+
+      {/* <Contador/> */}
 
       {/* <TextoIntermedio/> */}
 
