@@ -20,7 +20,7 @@ function App() {
       <NavBar/>
       <Header/>
 
-      {/* <Contador/> */}
+      <Contador/>
 
       {/* <TextoIntermedio/> */}
 

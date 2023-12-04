@@ -1,42 +1,201 @@
-#Contador{
+#Contador {
+    position: relative;
+
     background-color: var(--Oscuro);
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 }
-#Contador .cartel{
+
+#Contador .cartel {
     position: relative;
-    height: 500px;
+    height: 400px;
     width: 100%;
+
+    /* margin-bottom: 100px; */
 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-#Contador .cartel img{
+
+#Contador .cartel img {
     position: absolute;
-    /* top: 10%;
-    left: 10%; */
+    top: 15%;
+    /* left: 10%; */
     right: 0;
     left: 0;
     margin: 0 auto;
 
-    z-index: 0;
-}
-#Contador .cartel img{
-    height: 400px;
-    width: 900px;
+    height: 300px;
+    width: 700px;
 
-    z-index: 0;
+    z-index: 1;
 }
-#Contador .cartel .Clock, #Contador .cartel .text{
+
+#Contador .cartel .Clock,
+#Contador .cartel .text {
     z-index: 1;
 
-    font-size: 3rem;
+    font-size: 3.5rem;
 
     color: var(--Oscuro);
     /* font-size: 1.1rem; */
     font-weight: 800;
     font-style: normal;
+}
+
+#Contador .textura {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 1;
+
+    mix-blend-mode: hard-light;
+    /* mix-blend-mode: soft-light; */
+    mix-blend-mode: multiply;
+
+    opacity: 30%;
+}
+
+#Contador .planta_1 {
+    position: absolute;
+    bottom: 30px;
+    left: 270px;
+
+    transform: scaleX(-1) rotate(-20deg);
+
+    z-index: 0;
+
+    height: 400px;
+    width: auto;
+}
+
+#Contador .planta_2 {
+    position: absolute;
+    bottom: 50px;
+    right: 220px;
+
+    transform: rotate(30deg);
+
+    z-index: 0;
+
+    height: 400px;
+    width: auto;
+}
+
+#Contador .planta_3 {
+    position: absolute;
+    bottom: -100px;
+    right: 500px;
+
+    transform: rotate(100deg);
+
+    z-index: 0;
+
+    height: 500px;
+    width: auto;
+}
+
+#Contador .planta_4 {
+    position: absolute;
+    bottom: -100px;
+    right: 350px;
+
+    transform: rotate(-100deg);
+
+    z-index: 0;
+
+    height: 500px;
+    width: auto;
+}
+
+#Contador .planta_5 {
+    position: absolute;
+    bottom: 30px;
+    right: 500px;
+
+    transform: rotate(-70deg);
+
+    z-index: 0;
+
+    height: 500px;
+    width: auto;
+}
+
+#Contador .planta_6 {
+    position: absolute;
+    bottom: -20px;
+    right: 730px;
+
+    transform: scaleX(-1) rotate(-20deg);
+
+    z-index: 0;
+
+    height: 500px;
+    width: auto;
+}
+
+@media (max-width: 550px) {
+    #Contador .cartel img {
+        top: 25%;
+
+        height: 200px;
+        width: 400px;
+    }
+
+    #Contador .cartel .Clock,
+    #Contador .cartel .text {
+        font-size: 2.5rem;
+    }
+
+    #Contador .planta_1 {
+        position: absolute;
+        bottom: 30px;
+        left: 250px;
+    
+        transform: scaleX(-1) rotate(-60deg);
+    
+        z-index: 0;
+    
+        height: 400px;
+        width: auto;
+    }
+
+    #Contador .planta_2 {
+        position: absolute;
+        bottom: 30px;
+        right: 220px;
+
+        transform: rotate(-40deg);
+
+        z-index: 0;
+
+        height: 400px;
+        width: auto;
+    }
+
+    #Contador .planta_3 {
+        display: none;
+    }
+
+    #Contador .planta_4 {
+        bottom: -60px;
+        right: 120px;
+    }
+
+    #Contador .planta_5 {
+        display: none;
+    }
+
+    #Contador .planta_6 {
+        display: none;
+    }
 }
