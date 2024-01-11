@@ -1,108 +1,109 @@
 #Entradas {
-    /* height: 100vh; */
+    height: 100vh;
 
-    padding-top: 100px;
-    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
 
-    background-color: var(--Acento3);
+    padding-top: 50px;
+
+    position: relative;
+    z-index: 2;
+}
+
+#Entradas .textoContainer {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Entradas .textoContainer .textoContainer2 {
+    height: 80%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    color: var(--Principal);
 }
 
-#Entradas h2{
-    font-size: 3rem;
-
-    color: var(--Oscuro);
-
-    margin-bottom: 100px;
-}
-
-
-#Entradas .entradas {
-    width: 60%;
-}
-#Entradas .entradas .simple{
-    display: flex;
-    justify-content: space-between;
-
-    margin-bottom: 50px;
-}
-#Entradas .entradas .entrada{
-    height: 200px;
-    width: 300px;
-
-    padding-top: 10px;
-    padding-bottom: 20px;
-
-    background-color: var(--Acento2);
-
-    border-style: solid;
-    border-width: 5px;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-color: var(--Oscuro);
-
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-#Entradas .entradas .entrada.completa{
-    background-color: var(--Acento1);
-}
-#Entradas .entradas .completa .entrada{
-    height: 200px;
+#Entradas .textoContainer .textoContainer2 h2 {
     width: 100%;
 
-    padding-top: 10px;
-    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
 
-    background-color: var(--Acento1);
+#Entradas .textoContainer .textoContainer2 p {
+    margin-top: 20%;
+}
 
-    border-style: solid;
-    border-width: 5px;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-color: var(--Oscuro);
+#Entradas .entradasContainer {
+    width: 60%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Entradas .entradasContainer .entrada {
+    position: relative;
+
+    height: 70%;
+    width: 30%;
+
+    padding: 50px;
+
+    border-radius: 50px;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-#Entradas .entradas .entrada .dia{
-    color: var(--Principal);
+    justify-content: space-between;
 
-    font-size: 2.5rem;
-    font-weight: bold;
+    background-color: var(--Acento1);
 }
-#Entradas .entradas .entrada .precio{
-    color: var(--Principal);
+
+#Entradas .entradasContainer .entrada:first-child {
+    background-color: var(--Acento2);
+}
+
+#Entradas .entradasContainer .entrada h3 {
+    font-size: 2rem;
+}
+
+#Entradas .entradasContainer .entrada h4 {
     font-size: 1.5rem;
 }
 
 
-@media (max-width: 500px) {
-    #Entradas {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+#Entradas .entradasContainer .entrada .proximamente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
 
-    #Entradas h2{
-        margin-bottom: 50px;
-    }
+    height: 100%;
+    width: 100%;
 
-    #Entradas .entradas {
-        width: 80%;
-    }
-    #Entradas .entradas .simple{
-        flex-direction: column;
-        align-items: center;
+    /* background: rgba(255, 255, 255, 0.2); */
+    background: hsla(0, 0%, 0%, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 
-        gap: 25px;
-    }
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Entradas .entradasContainer .entrada .proximamente div {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--Principal);
+
+    transform: rotate(-45deg);
 }

@@ -10,6 +10,9 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import './Sponsors.css';
 // Sponsos
 import ingcome from './img/ingcome.png'
+import StrechArt from './img/ArtStrech.png'
+import Criolla from './img/la criolla.png'
+import Multitudes from './img/multitudes.png'
 
 export default function Sponsors() {
     return (
@@ -26,16 +29,17 @@ export default function Sponsors() {
                 modules={[Autoplay, Pagination]}
                 className="mySwiper"
                 autoplay={{
-                    delay: 3000,
+                    delay: 6000,
                     disableOnInteraction: false,
                 }}
             >
+                <SwiperSlide> <img src={Criolla} alt="" /> </SwiperSlide>
+                <SwiperSlide> <img src={StrechArt} alt="" /> </SwiperSlide>
+                <SwiperSlide> <img src={Multitudes} alt="" /> </SwiperSlide>
                 <SwiperSlide> <img src={ingcome} alt="" /> </SwiperSlide>
+                {/* <SwiperSlide> <img src={ingcome} alt="" /> </SwiperSlide>
                 <SwiperSlide> <img src={ingcome} alt="" /> </SwiperSlide>
-                <SwiperSlide> <img src={ingcome} alt="" /> </SwiperSlide>
-                <SwiperSlide> <img src={ingcome} alt="" /> </SwiperSlide>
-                <SwiperSlide> <img src={ingcome} alt="" /> </SwiperSlide>
-                <SwiperSlide> <img src={ingcome} alt="" /> </SwiperSlide>
+                <SwiperSlide> <img src={ingcome} alt="" /> </SwiperSlide> */}
 
 
             </Swiper>

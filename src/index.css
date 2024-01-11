@@ -19,6 +19,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   font-family: "acumin-pro", sans-serif;
+
+  background-color: var(--Oscuro);
 }
 
 code {
@@ -29,4 +31,22 @@ code {
 .app {
   width: 100%;
   height: fit-content;
+
+  position: relative;
+}
+
+.TexturaFondoGeneral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  height: 100%;
+  width: 100%;
+
+  mix-blend-mode: hard-light;
+  mix-blend-mode: multiply;
+  opacity: 30%;
+
+  pointer-events: none;
 }

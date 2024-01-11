@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 // import './App.css';
 
+import textura from './textura papel madera.jpg'
+
 
 import NavBar from './components/NavBar/NavBar';
 import Header from './components/Header/Header';
@@ -18,21 +20,29 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
+
       <Header/>
+
+      <Sponsors/>
+
+      <Actividades/>
+
+      <Entradas/>
 
       <Contador/>
 
       {/* <TextoIntermedio/> */}
 
-      {/* <Actividades/> */}
-
-      {/* <Sponsors/> */}
+      
 
       {/* <AboutUs/> */}
-      {/* <Entradas/> */}
+     
       {/* <Ubicacion/> */}
       <Contacto/>
       <Footer/>
+
+
+      <img src={textura} alt="" className='TexturaFondoGeneral'/>
 
 
     </div>
