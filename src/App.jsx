@@ -16,6 +16,9 @@ import Footer from './components/Footer/Footer';
 import Actividades from './components/Actividades/Actividades';
 import TextoIntermedio from './components/TextoIntermedio/TextoIntermedio';
 
+// MUI
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 function App() {
   return (
     <div className="App">
@@ -41,6 +44,10 @@ function App() {
 
 
       <img src={textura} alt="" className='TexturaFondoGeneral'/>
+
+      <a href="https://www.instagram.com/mendo.cann/" className='instagram'>
+        <InstagramIcon/>
+      </a>
 
 
     </div>

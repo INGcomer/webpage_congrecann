@@ -13,38 +13,38 @@ export default function Footer() {
         <section id='footer'>
             <div className='menu_container'>
                 <div className="callToAccion">
-                    <a href="https://www.ing-come.com/">
-                    <Button
-                        type='link'
-                        variant="contained"
-                        color="secondary"
-                        size="large"
-                        sx={{ m: 1, width: '50%' }}
+                    <a href="#contacto">
+                        <Button
+                            type='link'
+                            variant="contained"
+                            color="secondary"
+                            size="large"
+                            sx={{ m: 1, width: '50%' }}
                         // endIcon={<SendIcon />}
-                    >
-                        CONTACTO
-                    </Button>
+                        >
+                            CONTACTO
+                        </Button>
                     </a>
                 </div>
                 <div className="redes">
-                    <a href="https://www.instagram.com/ingcome.c/">
-                        <InstagramIcon/>
+                    <a href="https://www.instagram.com/mendo.cann/">
+                        <InstagramIcon />
                     </a>
                     <a href="https://www.linkedin.com/company/ingcome">
-                        <LinkedInIcon/>
+                        <LinkedInIcon />
                     </a>
                 </div>
                 <div className="texto">
                     <div>
-                        <FmdGoodOutlinedIcon/>
+                        <FmdGoodOutlinedIcon />
                         <span>
                             Mendoza, Argentina
                         </span>
                     </div>
                     <div>
-                        <EmailOutlinedIcon/>
+                        <EmailOutlinedIcon />
                         <span>
-                        contacto@ing-come.com
+                            contacto@mendocann.ar
                         </span>
                     </div>
                 </div>

@@ -51,3 +51,28 @@ code {
 
   pointer-events: none;
 }
+
+.instagram{
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 10000;
+  
+  height: 70px;
+  width: 70px;
+
+  border-radius: 50%;
+
+  background-color: var(--Acento1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram svg{
+  height: 80%;
+  width: auto;
+
+  color: var(--Oscuro);
+}
