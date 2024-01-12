@@ -59,7 +59,7 @@ export default function Ubicacion() {
                 </Marker>
             </MapContainer>
 
-            <img src={fondo} alt="" className='fondo'/>
+            {/* <img src={fondo} alt="" className='fondo'/> */}
 
         </section>
     );

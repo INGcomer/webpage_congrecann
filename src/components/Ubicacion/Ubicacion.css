@@ -14,7 +14,7 @@
 
 #Ubicacion h2{
     font-size: 2rem;
-    color: var(--Oscuro);
+    color: var(--Principal);
 }
 
 #Ubicacion .direccion{
@@ -25,6 +25,8 @@
 
     margin-top: 50px;
     margin-bottom: 100px;
+
+    color: var(--Principal);
 }
 
 

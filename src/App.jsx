@@ -38,7 +38,8 @@ function App() {
 
       {/* <AboutUs/> */}
      
-      {/* <Ubicacion/> */}
+      <Ubicacion/>
+      
       <Contacto/>
       <Footer/>
 
