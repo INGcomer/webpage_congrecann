@@ -27,13 +27,11 @@ function App() {
 
       <Actividades/>
 
-      {/* <Entradas/> */}
+      <Entradas/>
 
-      <Contador/>
+      {/* <Contador/> */}
 
       {/* <TextoIntermedio/> */}
-
-      
 
       {/* <AboutUs/> */}
      

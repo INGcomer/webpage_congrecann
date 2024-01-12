@@ -1,61 +1,37 @@
 #Entradas {
-    height: 100vh;
+    margin-bottom: 100px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     padding-top: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
 
     position: relative;
     z-index: 2;
 }
 
-#Entradas .textoContainer {
-    width: 40%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#Entradas .textoContainer .textoContainer2 {
-    height: 80%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    color: var(--Principal);
-}
-
-#Entradas .textoContainer .textoContainer2 h2 {
+#Entradas h2{
     width: 100%;
-
     text-align: center;
+    color: var(--Principal);
     font-size: 2rem;
 }
 
-#Entradas .textoContainer .textoContainer2 p {
-    margin-top: 20%;
-}
-
 #Entradas .entradasContainer {
-    width: 60%;
-
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    gap: 100px;
 }
 
 #Entradas .entradasContainer .entrada {
+    /* height: 30vw; */
     position: relative;
 
-    height: 70%;
-    width: 30%;
-
     padding: 50px;
-
     border-radius: 50px;
 
     display: flex;
@@ -68,13 +44,19 @@
 #Entradas .entradasContainer .entrada:first-child {
     background-color: var(--Acento2);
 }
+#Entradas .entradasContainer .entrada:last-child {
+    background-color: var(--Acento3);
+}
 
 #Entradas .entradasContainer .entrada h3 {
     font-size: 2rem;
 }
 
 #Entradas .entradasContainer .entrada h4 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+#Entradas .entradasContainer .entrada h4 {
+    margin-bottom: 0px;
 }
 
 
@@ -98,6 +80,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    display: none;
 }
 
 #Entradas .entradasContainer .entrada .proximamente div {
@@ -106,4 +90,67 @@
     color: var(--Principal);
 
     transform: rotate(-45deg);
+}
+
+#Entradas .comprar {
+   height: 100px;
+   width: 100%;
+
+   margin-top: 100px;
+
+   background-color: var(--Principal);
+
+   border-radius: 50px;
+   border-style: solid;
+   border-width: 4px;
+
+   font-size: 2rem;
+   font-weight: 800;
+   text-decoration: none;
+   color: var(--Acento3);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   transition: all 0.5s;
+}
+
+#Entradas .comprar.disabled {
+   /* background-color: #353434; */
+   border-color: #353434;
+   color: #353434;
+}
+/* #Entradas .comprar:hover {
+   background-color: var(--Acento3);
+   color: var(--Principal);
+} */
+
+
+@media (max-width: 1400px) {
+    #Entradas .entradasContainer {
+        gap: 50px;
+    }
+    #Entradas .entradasContainer .entrada {
+        padding: 25px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    #Entradas {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    
+    #Entradas .entradasContainer {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #Entradas .comprar {
+        margin-top: 50px;
+        font-size: 1.5rem;
+     }
 }

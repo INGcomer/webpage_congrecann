@@ -10,42 +10,57 @@ import './Entradas.css';
 export default function Entradas() {
     return (
         <section id='Entradas'>
-            <div className="textoContainer">
-                <div className="textoContainer2">
-                <h2> Entradas </h2>
-
-                <p>Pronto revelaremos mas informacion sobre las entradas</p>
-                </div>
-                
-            </div>
+             <h2> Entradas </h2>
             <div className="entradasContainer">
                 <div className="entrada">
-                    <h3> Entrada B2B </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, similique atque? Ex aliquam fugiat voluptate, eos reprehenderit corporis dolorem illum vel veniam repellendus, inventore at obcaecati vitae deleniti id beatae.</p>
-                    <h4>PRECIO: XXXX</h4>
+                    <h3> Entrada General </h3>
+                    <p>
+                    Sumérgete en el vibrante mundo del cannabis. Accede a todos los rincones de la Expo MendoCann 2024, desde las últimas novedades en tecnología cannábica hasta los shows en vivo más emocionantes. Una experiencia completa para todos los amantes del cannabis
+                    </p>
+                    <h4>PRECIO POR DIA: proximamente</h4>
+                    <h4>PACK 2 DIAS: proximamente</h4>
 
-                    <Button>
+                    {/* <Button>
                         COMPRAR
-                    </Button>
+                    </Button> */}
 
                     <div className="proximamente">
                         <div><span>Proximamente</span></div>
                     </div>
                 </div>
                 <div className="entrada">
-                    <h3> Entrada Basica </h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos vitae esse neque? Ratione odio repudiandae odit at nobis? Nobis porro earum asperiores placeat sequi pariatur velit quam eveniet libero ipsam.</p>
-                    <h4>PRECIO: XXXX</h4>
+                    <h3> Entrada B2B </h3>
+                    <p>
+                    Da un paso hacia el futuro de los negocios cannábicos con nuestra Entrada B2B. Obtén acceso exclusivo a la Plataforma B2B y a espacios diseñados para conexiones empresariales. Participa en reuniones estratégicas, establece colaboraciones y descubre oportunidades únicas en la industria.
+                    </p>
+                    <h4>PRECIO POR DIA: proximamente</h4>
+                    <h4>PACK 2 DIAS: proximamente</h4>
 
-                    <Button>
+                    {/* <Button>
                         COMPRAR
-                    </Button>
+                    </Button> */}
+
+                    <div className="proximamente">
+                        <div><span>Proximamente</span></div>
+                    </div>
+                </div>
+                <div className="entrada">
+                    <h3> Entrada VIP </h3>
+                    <p>Vive la experiencia definitiva con nuestra Entrada VIP. Disfruta de todos los beneficios de la Entrada B2B, además de acceso a una jornada completa de degustaciones, almuerzos exclusivos y eventos VIP. Sumérgete en la cultura cannábica de manera única y celebra con estilo en la Expo MendoCann 2024.</p>
+                    <h4>PRECIO POR DIA: proximamente</h4>
+                    <h4>PACK 2 DIAS: proximamente</h4>
+
+                    {/* <Button>
+                        COMPRAR
+                    </Button> */}
 
                     <div className="proximamente">
                         <div><span>Proximamente</span></div>
                     </div>
                 </div>
             </div>
+
+            <a className="comprar disabled"> Proximamente Comprar Entradas </a>
             
 
         </section>
