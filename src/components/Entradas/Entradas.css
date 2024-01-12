@@ -1,108 +1,156 @@
 #Entradas {
-    /* height: 100vh; */
-
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-    background-color: var(--Acento3);
+    margin-bottom: 100px;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+
+    position: relative;
+    z-index: 2;
 }
 
 #Entradas h2{
-    font-size: 3rem;
-
-    color: var(--Oscuro);
-
-    margin-bottom: 100px;
+    width: 100%;
+    text-align: center;
+    color: var(--Principal);
+    font-size: 2rem;
 }
 
-
-#Entradas .entradas {
-    width: 60%;
-}
-#Entradas .entradas .simple{
+#Entradas .entradasContainer {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+}
+
+#Entradas .entradasContainer .entrada {
+    /* height: 30vw; */
+    position: relative;
+
+    padding: 50px;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
-    margin-bottom: 50px;
-}
-#Entradas .entradas .entrada{
-    height: 200px;
-    width: 300px;
-
-    padding-top: 10px;
-    padding-bottom: 20px;
-
-    background-color: var(--Acento2);
-
-    border-style: solid;
-    border-width: 5px;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-color: var(--Oscuro);
-
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-#Entradas .entradas .entrada.completa{
     background-color: var(--Acento1);
 }
-#Entradas .entradas .completa .entrada{
-    height: 200px;
+
+#Entradas .entradasContainer .entrada:first-child {
+    background-color: var(--Acento2);
+}
+#Entradas .entradasContainer .entrada:last-child {
+    background-color: var(--Acento3);
+}
+
+#Entradas .entradasContainer .entrada h3 {
+    font-size: 2rem;
+}
+
+#Entradas .entradasContainer .entrada h4 {
+    font-size: 1.2rem;
+}
+#Entradas .entradasContainer .entrada h4 {
+    margin-bottom: 0px;
+}
+
+
+#Entradas .entradasContainer .entrada .proximamente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    height: 100%;
     width: 100%;
 
-    padding-top: 10px;
-    padding-bottom: 20px;
+    /* background: rgba(255, 255, 255, 0.2); */
+    background: hsla(0, 0%, 0%, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 
-    background-color: var(--Acento1);
-
-    border-style: solid;
-    border-width: 5px;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-color: var(--Oscuro);
+    border-radius: 50px;
 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-}
-#Entradas .entradas .entrada .dia{
-    color: var(--Principal);
 
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-#Entradas .entradas .entrada .precio{
-    color: var(--Principal);
-    font-size: 1.5rem;
+    display: none;
 }
 
+#Entradas .entradasContainer .entrada .proximamente div {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--Principal);
+
+    transform: rotate(-45deg);
+}
+
+#Entradas .comprar {
+   height: 100px;
+   width: 100%;
+
+   margin-top: 100px;
+
+   background-color: var(--Principal);
+
+   border-radius: 50px;
+   border-style: solid;
+   border-width: 4px;
+
+   font-size: 2rem;
+   font-weight: 800;
+   text-decoration: none;
+   color: var(--Acento3);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   transition: all 0.5s;
+}
+
+#Entradas .comprar.disabled {
+   /* background-color: #353434; */
+   border-color: #353434;
+   color: #353434;
+}
+/* #Entradas .comprar:hover {
+   background-color: var(--Acento3);
+   color: var(--Principal);
+} */
+
+
+@media (max-width: 1400px) {
+    #Entradas .entradasContainer {
+        gap: 50px;
+    }
+    #Entradas .entradasContainer .entrada {
+        padding: 25px;
+        align-items: center;
+        text-align: center;
+    }
+}
 
 @media (max-width: 500px) {
     #Entradas {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-right: 25px;
+        padding-left: 25px;
     }
-
-    #Entradas h2{
-        margin-bottom: 50px;
-    }
-
-    #Entradas .entradas {
-        width: 80%;
-    }
-    #Entradas .entradas .simple{
+    
+    #Entradas .entradasContainer {
         flex-direction: column;
-        align-items: center;
-
-        gap: 25px;
+        gap: 50px;
     }
+
+    #Entradas .comprar {
+        margin-top: 50px;
+        font-size: 1.5rem;
+     }
 }
