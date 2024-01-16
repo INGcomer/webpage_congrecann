@@ -10,7 +10,7 @@ export default function NavBar() {
                 </a> */}
             </div>
             <div className="central">
-                <a href="#Header" className='logo'>
+                <a href="/" className='logo'>
                 <svg 
                     id="Capa_1" 
                     className='logo' 
@@ -37,7 +37,7 @@ export default function NavBar() {
             </div>
             <div className="derecha">
                 {/* <Button>  INSCRIBIRSE  </Button> */}
-                {/* <Button className="customButtom" link="#contacto" >  Mantenete informado  </Button> */}
+                {/* <Button className="customButtom" link="/expocitores" > Ser Expocitor  </Button> */}
                 <a href="#contacto"> CONTACTO </a>
            </div>
         </nav>
