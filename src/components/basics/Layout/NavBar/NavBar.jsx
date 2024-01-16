@@ -1,7 +1,5 @@
-import Button from '../basics/Button'
+import Button from '../../Button/Button'
 import './NavBar.css'
-
-import logo from './Mesa de trabajo 1 copy 10.png'
 
 export default function NavBar() {
     return (

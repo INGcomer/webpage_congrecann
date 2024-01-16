@@ -9,7 +9,7 @@ import axios from "axios";
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content'
 // components
-import Button from '../basics/Button'
+import Button from '../../basics/Button/Button'
 // CSS
 import './Contacto.css';
 

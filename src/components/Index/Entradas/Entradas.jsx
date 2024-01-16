@@ -1,7 +1,7 @@
 // React
 import { useState } from "react";
 // components
-import Button from '../basics/Button'
+import Button from '../../basics/Button/Button'
 // css
 import './Entradas.css';
 // imgs

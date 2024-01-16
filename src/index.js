@@ -1,13 +1,27 @@
+// React
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+
+import Index from './components/Index/Index';
+import Expocitores from "./components/Expocitores/Expocitores";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        {/* paguina de inicio */}
+        <Route path="/" element={<Index/>} />
+        <Route path="/home" element={<Index/>} />
+
+        <Route path="/expocitores" element={<Expocitores/>} />
+
+      </Routes>
+    </BrowserRouter> 
   </React.StrictMode>
 );
 
