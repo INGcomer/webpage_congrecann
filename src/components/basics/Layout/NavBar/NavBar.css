@@ -74,10 +74,9 @@ nav div.izquierda img {
 
 @media (max-width: 500px) {
 
-    /* nav .izquierda, nav .derecha {
-        width: 15%;
-    } */
-    nav .derecha,
+    nav .izquierda, nav .derecha, nav .central {
+        width: fit-content
+    }
     nav .precindible {
         display: none;
     }

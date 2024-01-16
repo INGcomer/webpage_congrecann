@@ -27,7 +27,7 @@ export default function Footer() {
                     </a>
                 </div>
                 <div className="redes">
-                    <a href="https://www.instagram.com/mendo.cann/">
+                    <a href="https://www.instagram.com/mendocannok/">
                         <InstagramIcon />
                     </a>
                     <a href="https://www.linkedin.com/company/ingcome">

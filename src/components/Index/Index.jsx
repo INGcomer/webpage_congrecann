@@ -46,7 +46,7 @@ export default function Index() {
 
         <img src={textura} alt="" className='TexturaFondoGeneral' />
 
-        <a href="https://www.instagram.com/mendo.cann/" className='instagram'>
+        <a href="https://www.instagram.com/mendocannok/" className='instagram'>
           <InstagramIcon />
         </a>
 

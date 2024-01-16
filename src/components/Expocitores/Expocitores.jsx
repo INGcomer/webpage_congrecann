@@ -28,7 +28,7 @@ export default function Expocitores() {
 
         axios({
             method: 'post',
-            url: 'https://api.sheetmonkey.io/form/pa4t2jHLzSvwYiQ3aafi7R',
+            url: 'https://api.sheetmonkey.io/form/fEWbZnP1CACtaD722iqnEw',
             data: data
         }).then(Response => {
             MySwal.fire({         // si ocurrio algun error muestro este mensaje
@@ -74,7 +74,7 @@ export default function Expocitores() {
     return (
         <BaseLayout>
             <div className="Expocitores">
-                <h1> ¿Querés ser expocitor? </h1>
+                <h1> ¿Querés ser expositor? </h1>
                 <h2> Completá el presente formulario para recibir toda la información necesaria para contratar un stand y ser sponsor de Expo MendoCann 2024 </h2>
                 <div id="contacto">
                     <form onSubmit={handleSubmit(onSubmit)}>
