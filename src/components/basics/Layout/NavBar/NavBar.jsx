@@ -37,7 +37,7 @@ export default function NavBar() {
             </div>
             <div className="derecha">
                 {/* <Button>  INSCRIBIRSE  </Button> */}
-                <Button className="customButtom" link="/expocitores" > Ser Expocitor  </Button>
+                <Button className="customButtom" link="/expocitores" > Ser Expositor  </Button>
                 {/* <a href="#contacto"> CONTACTO </a> */}
            </div>
         </nav>
