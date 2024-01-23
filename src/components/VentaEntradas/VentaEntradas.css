@@ -1,0 +1,7 @@
+.VentaEntradas {
+    background-color: var(--Oscuro);
+}
+
+.VentaEntradas #Entradas{
+    margin-bottom: 0;
+}

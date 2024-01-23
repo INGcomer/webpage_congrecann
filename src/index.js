@@ -1,13 +1,15 @@
 // React
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Redirect from './components/basics/Redirect/Redirect';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 
 import Index from './components/Index/Index';
 import Expocitores from "./components/Expocitores/Expocitores";
+import VentaEntradas from './components/VentaEntradas/VentaEntradas';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,13 +17,19 @@ root.render(
     <BrowserRouter>
       <Routes>
         {/* paguina de inicio */}
-        <Route path="/" element={<Index/>} />
-        <Route path="/home" element={<Index/>} />
+        <Route path="/" element={<Index />} />
+        <Route path="/home" element={<Index />} />
 
-        <Route path="/expocitores" element={<Expocitores/>} />
+        <Route path="/expocitores" element={<Expocitores />} />
+
+        <Route
+          path="/venta-entradas"
+          // element={<Redirect loc="https://www.youtube.com/" />}
+          element={<VentaEntradas />}
+        />
 
       </Routes>
-    </BrowserRouter> 
+    </BrowserRouter>
   </React.StrictMode>
 );
 

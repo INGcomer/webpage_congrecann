@@ -11,7 +11,7 @@ import planta from './img/planta.png'
 import planta2 from './img/planta2.png'
 
 const Contador = () => {
-  let deadline = "April, 19, 2024";
+  // let deadline = "April, 19, 2024";
 
   return (
     <section id="Contador">
@@ -20,7 +20,7 @@ const Contador = () => {
             <div className="text">
                 Nos vemos en:
             </div>
-            <Clock deadline={deadline}/>
+            {/* <Clock deadline={deadline}/> */}
         </div>
         <img src={textura} alt="Textura de papel" className='textura' />
         <img src={planta} alt="planta 1" className='planta_1' />

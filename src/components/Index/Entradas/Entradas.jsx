@@ -2,12 +2,15 @@
 import { useState } from "react";
 // components
 import Button from '../../basics/Button/Button'
+import Clock from "../Contador/Clock";
 // css
 import './Entradas.css';
 // imgs
 
 
 export default function Entradas() {
+    let deadline = "February, 1, 2024";
+
     return (
         <section id='Entradas'>
              <h2> Entradas </h2>
@@ -17,8 +20,8 @@ export default function Entradas() {
                     <p>
                     Sumérgete en el vibrante mundo del cannabis. Accede a todos los rincones de la Expo MendoCann 2024, desde las últimas novedades en tecnología cannábica hasta los shows en vivo más emocionantes. Una experiencia completa para todos los amantes del cannabis
                     </p>
-                    <h4>PRECIO POR DIA: proximamente</h4>
-                    <h4>PACK 2 DIAS: proximamente</h4>
+                    <h4>PRECIO POR DIA: $5.000</h4>
+                    <h4>PACK 2 DIAS: $8.000</h4>
 
                     {/* <Button>
                         COMPRAR
@@ -47,8 +50,8 @@ export default function Entradas() {
                 <div className="entrada">
                     <h3> Entrada VIP </h3>
                     <p>Vive la experiencia definitiva con nuestra Entrada VIP. Disfruta de todos los beneficios de la Entrada B2B, además de acceso a una jornada completa de degustaciones, almuerzos exclusivos y eventos VIP. Sumérgete en la cultura cannábica de manera única y celebra con estilo en la Expo MendoCann 2024.</p>
-                    <h4>PRECIO POR DIA: proximamente</h4>
-                    <h4>PACK 2 DIAS: proximamente</h4>
+                    <h4>PRECIO POR DIA: $15.000</h4>
+                    <h4>PACK 2 DIAS: $25.000</h4>
 
                     {/* <Button>
                         COMPRAR
@@ -60,7 +63,9 @@ export default function Entradas() {
                 </div>
             </div>
 
-            <a className="comprar disabled"> Proximamente Comprar Entradas </a>
+            
+
+            <a className="comprar disabled"> <span>Comprar disponible en:</span> <span><Clock deadline={deadline}/></span>  </a>
             
 
         </section>
