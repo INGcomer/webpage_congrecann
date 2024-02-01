@@ -153,5 +153,8 @@
     #Entradas .comprar {
         margin-top: 50px;
         font-size: 1.5rem;
+        flex-direction: column;
+
+        height:fit-content;
      }
 }
