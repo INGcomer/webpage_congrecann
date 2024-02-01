@@ -9,7 +9,7 @@ import './Entradas.css';
 
 
 export default function Entradas() {
-    let deadline = "February, 1, 2024";
+    let deadline = "February, 1, 2024, 16:00:00";
 
     return (
         <section id='Entradas'>
