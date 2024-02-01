@@ -24,8 +24,8 @@ root.render(
 
         <Route
           path="/venta-entradas"
-          // element={<Redirect loc="https://www.showstickets.ar/event/mendocann" />}
-          element={<VentaEntradas />}
+          element={<Redirect loc="https://www.showstickets.ar/event/mendocann" />}
+          // element={<VentaEntradas />}
         />
 
       </Routes>
