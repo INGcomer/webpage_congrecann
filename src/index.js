@@ -24,7 +24,7 @@ root.render(
 
         <Route
           path="/venta-entradas"
-          // element={<Redirect loc="https://www.youtube.com/" />}
+          // element={<Redirect loc="https://www.showstickets.ar/event/mendocann" />}
           element={<VentaEntradas />}
         />
 

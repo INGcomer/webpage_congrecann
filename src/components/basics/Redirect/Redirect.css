@@ -1,0 +1,15 @@
+.redirect{
+    height: 80vh;
+    padding-top: 50px;
+
+    background-color: var(--Oscuro);
+    color: var(--Principal);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redirect h1 {
+    font-size: 3rem;
+}
