@@ -1,0 +1,38 @@
+[
+    {
+        "nombre": "Federico Benitez (Fede Vapos",
+        "tipo": "Taller",
+        "titulo": "Terpenos: Descubriendo los aromas del cannabis y sus propiedades",
+        "descripcion": "Se trata de un taller/cata de terpenos presentes en el Cannabis. Abordaremos desde una perspectiva química y sensorial los princpales terpenos presentes en la planta y en simultáneo los asistentes podrán oler dichos terpenos.",
+        "web": "https://terpenoteca.com/",
+        "instagram": "https://www.instagram.com/terpenautas/",
+        "facebook": "https://www.facebook.com/vaposfede",
+        "x": null,
+        "foto": "/imgs/Disertantes/Fede Vapos/fedeVapos.jpeg",
+        "logo": "/imgs/Disertantes/Fede Vapos/terpenoteca.png"
+    },
+    {
+        "nombre": "Pablo Cunto",
+        "tipo": "Conferencia",
+        "titulo": "Cultivo de autoflorecientes.",
+        "descripcion": "Detalles más importantes del cultivo de plantas auto florecientes. Para optimizar la Cosecha.",
+        "web": "https://chitaseeds.com/",
+        "instagram": "https://www.instagram.com/pablo.cun/",
+        "facebook": null,
+        "x": null,
+        "foto": "/imgs/Disertantes/Pablo Cunto/pabloCunto.png",
+        "logo": "/imgs/Disertantes/Pablo Cunto/chita.png"
+    },
+    {
+        "nombre": "Pablo Cunto",
+        "tipo": "Conferencia",
+        "titulo": "Cultivo de autoflorecientes.",
+        "descripcion": "Detalles más importantes del cultivo de plantas auto florecientes. Para optimizar la Cosecha.",
+        "web": "https://chitaseeds.com/",
+        "instagram": "https://www.instagram.com/pablo.cun/",
+        "facebook": null,
+        "x": null,
+        "foto": "/imgs/Disertantes/Pablo Cunto/pabloCunto.png",
+        "logo": "/imgs/Disertantes/Pablo Cunto/chita.png"
+    }
+]
