@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 // swiper
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,12 +16,20 @@ import Criolla from './img/sponsors/la criolla.png'
 import Multitudes from './img/sponsors/multitudes.png'
 
 export default function Sponsors() {
+    const [CantidadSlides, SetCantidadSlides] = useState(1)
+
+    useEffect(() => {
+        console.log(window.innerWidth)
+        if (window.innerWidth > 1200) {
+            SetCantidadSlides(3)
+        }
+    }, [])
     return (
         <section id='Sponsors'>
             <h2> Nos acompañan: </h2>
 
             <Swiper
-                slidesPerView={3}
+                slidesPerView={CantidadSlides}
                 spaceBetween={30}
                 loop={true}
                 // pagination={{

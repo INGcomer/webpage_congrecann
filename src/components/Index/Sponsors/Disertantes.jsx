@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 // swiper
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -19,12 +20,21 @@ import XIcon from '@mui/icons-material/X';
 
 
 export default function Disertantes() {
+    const [CantidadSlides, SetCantidadSlides] = useState(1)
+
+    useEffect(() => {
+        console.log(window.innerWidth)
+        if (window.innerWidth > 1200) {
+            SetCantidadSlides(2)
+        }
+    }, [])
+
     return (
         <section id='Sponsors'>
             <h2> Disertantes: </h2>
 
             <Swiper
-                slidesPerView={2}
+                slidesPerView={CantidadSlides}
                 spaceBetween={30}
                 loop={true}
                 // pagination={{
@@ -37,9 +47,9 @@ export default function Disertantes() {
                     disableOnInteraction: false,
                 }}
             >
-                {Json.map((disertante) => {
+                {Json.map((disertante, Index) => {
                     return (
-                        <SwiperSlide> <Disertante disertante={disertante} /> </SwiperSlide>
+                        <SwiperSlide key={Index}> <Disertante disertante={disertante} /> </SwiperSlide>
                     )
                 })}
             </Swiper>
