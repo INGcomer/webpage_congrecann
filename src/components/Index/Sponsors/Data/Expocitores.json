@@ -2,16 +2,28 @@
     {
         "nombre_linea_1": "SAVIA",
         "nombre_linea_2": "Semillas",
+        "web": "https://saviasemilla.empretienda.com.ar/",
+        "instagram": "https://www.instagram.com/saviasemillas/",
+        "facebook": "https://www.facebook.com/profile.php?id=61552669291406",
+        "x": null,
         "img": "/imgs/Expocitores/IMG-20240206-WA0001_-_Gustavo_Mamianetti-removebg-preview.png"
     },
     {
         "nombre_linea_1": "KIEV",
         "nombre_linea_2": "Ingeniería de cultivos",
+        "web": "https://kievcultivodeplantas.com/",
+        "instagram": "https://www.instagram.com/kievingenieria/",
+        "facebook": null,
+        "x": null,
         "img": "/imgs/Expocitores/LOGO KIEV - Kiev ingeniería en cultivos.png"
     },
     {
         "nombre_linea_1": "Fábrica Chiatti",
         "nombre_linea_2": null,
+        "web": null,
+        "instagram": "https://www.instagram.com/fabrica_chiatti/",
+        "facebook": "https://www.facebook.com/chiatti.chiatti",
+        "x": null,
         "img": "/imgs/Expocitores/chiati.png"
     }
 ]

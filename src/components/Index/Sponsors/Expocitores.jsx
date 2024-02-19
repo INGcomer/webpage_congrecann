@@ -10,8 +10,11 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import Json from './Data/Expocitores.json'
 // css
 import './Sponsors.css';
-// img
-// import Sabia from './img/expocitores/IMG-20240206-WA0001_-_Gustavo_Mamianetti-removebg-preview.png'
+// icons
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LanguageIcon from '@mui/icons-material/Language';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
 
 export default function Expocitores() {
     return (
@@ -33,25 +36,57 @@ export default function Expocitores() {
                 }}
             >
                 {Json.map((expocitor) => {
-                return (
-                    <SwiperSlide> <Expocitor expocitor={expocitor}/> </SwiperSlide>
-                )
-            })}
+                    return (
+                        <SwiperSlide> <Expocitor expocitor={expocitor} /> </SwiperSlide>
+                    )
+                })}
             </Swiper>
 
-            
+
 
 
         </section>
     );
 }
 
-function Expocitor({expocitor}) {
+function Expocitor({ expocitor }) {
     return (
-        <div className='expocitor'>
-            <img src={expocitor.img} alt="" />
-            <h3>{expocitor.nombre_linea_1}</h3>
-            <h4>{expocitor.nombre_linea_2}</h4>
+        <div className='expocitorContainer'>
+            <div className='expocitor'>
+                <img src={expocitor.img} alt="" />
+                <h3>{expocitor.nombre_linea_1}</h3>
+                <h4>{expocitor.nombre_linea_2}</h4>
+            </div>
+            <div className='redes'>
+                {expocitor.instagram ?
+                    <a href={expocitor.instagram}>
+                        <InstagramIcon />
+                    </a>
+                    :
+                    null
+                }
+                {expocitor.web ?
+                    <a href={expocitor.web}>
+                        <LanguageIcon />
+                    </a>
+                    :
+                    null
+                }
+                {expocitor.facebook ?
+                    <a href={expocitor.facebook}>
+                        <FacebookIcon />
+                    </a>
+                    :
+                    null
+                }
+                {expocitor.x ?
+                    <a href={expocitor.x}>
+                        <XIcon />
+                    </a>
+                    :
+                    null
+                }
+            </div>
         </div>
     )
 }
