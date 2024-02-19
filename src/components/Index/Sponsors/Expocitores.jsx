@@ -19,7 +19,7 @@ import XIcon from '@mui/icons-material/X';
 export default function Expocitores() {
     return (
         <section id='Sponsors'>
-            <h2> Expocitores: </h2>
+            <h2> Expositores: </h2>
 
             <Swiper
                 slidesPerView={3}
