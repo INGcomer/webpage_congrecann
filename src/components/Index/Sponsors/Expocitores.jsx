@@ -19,7 +19,7 @@ export default function Expocitores() {
             <h2> Expocitores: </h2>
 
             <Swiper
-                slidesPerView={2}
+                slidesPerView={3}
                 spaceBetween={30}
                 loop={true}
                 // pagination={{

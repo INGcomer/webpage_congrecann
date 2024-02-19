@@ -16,7 +16,7 @@ import Criolla from './img/sponsors/la criolla.png'
 import Multitudes from './img/sponsors/multitudes.png'
 
 export default function Sponsors() {
-    const [CantidadSlides, SetCantidadSlides] = useState(1)
+    const [CantidadSlides, SetCantidadSlides] = useState(2)
 
     useEffect(() => {
         console.log(window.innerWidth)

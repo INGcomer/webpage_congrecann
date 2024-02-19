@@ -8,5 +8,10 @@
         "nombre_linea_1": "KIEV",
         "nombre_linea_2": "Ingeniería de cultivos",
         "img": "/imgs/Expocitores/LOGO KIEV - Kiev ingeniería en cultivos.png"
+    },
+    {
+        "nombre_linea_1": "Fábrica Chiatti",
+        "nombre_linea_2": null,
+        "img": "/imgs/Expocitores/chiati.png"
     }
 ]

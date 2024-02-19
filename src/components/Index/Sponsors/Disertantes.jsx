@@ -37,9 +37,9 @@ export default function Disertantes() {
                 slidesPerView={CantidadSlides}
                 spaceBetween={30}
                 loop={true}
-                // pagination={{
-                //     clickable: true,
-                // }}
+                pagination={{
+                    clickable: true,
+                }}
                 modules={[Autoplay, Pagination]}
                 className="mySwiper"
                 autoplay={{

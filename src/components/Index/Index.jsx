@@ -30,9 +30,9 @@ export default function Index() {
 
         <Sponsors />
 
-        {/* <Expocitores/>
+        <Expocitores/>
 
-        <Disertantes/> */}
+        <Disertantes/>
 
         <Actividades />
 

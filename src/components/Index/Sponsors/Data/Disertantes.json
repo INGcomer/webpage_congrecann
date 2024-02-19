@@ -1,15 +1,15 @@
 [
     {
-        "nombre": "Federico Benitez (Fede Vapos",
+        "nombre": "Federico Benitez",
         "tipo": "Taller",
-        "titulo": "Terpenos: Descubriendo los aromas del cannabis y sus propiedades",
+        "titulo": "Terpenos: Descubriendo los aromas del cannabis y sus propiedades.",
         "descripcion": "Se trata de un taller/cata de terpenos presentes en el Cannabis. Abordaremos desde una perspectiva química y sensorial los princpales terpenos presentes en la planta y en simultáneo los asistentes podrán oler dichos terpenos.",
         "web": "https://terpenoteca.com/",
         "instagram": "https://www.instagram.com/terpenautas/",
         "facebook": "https://www.facebook.com/vaposfede",
         "x": null,
         "foto": "/imgs/Disertantes/Fede Vapos/fedeVapos.jpeg",
-        "logo": "/imgs/Disertantes/Fede Vapos/terpenoteca.png"
+        "logo": null
     },
     {
         "nombre": "Pablo Cunto",
@@ -21,18 +21,18 @@
         "facebook": null,
         "x": null,
         "foto": "/imgs/Disertantes/Pablo Cunto/pabloCunto.png",
-        "logo": "/imgs/Disertantes/Pablo Cunto/chita.png"
+        "logo": null
     },
     {
-        "nombre": "Pablo Cunto",
-        "tipo": "Conferencia",
-        "titulo": "Cultivo de autoflorecientes.",
-        "descripcion": "Detalles más importantes del cultivo de plantas auto florecientes. Para optimizar la Cosecha.",
-        "web": "https://chitaseeds.com/",
-        "instagram": "https://www.instagram.com/pablo.cun/",
+        "nombre": "Germán Pereira y Roxana Ojeda ",
+        "tipo": "Taller",
+        "titulo": "Importancia de una Alimentación con Cáñamo.",
+        "descripcion": "Repaso histórico-social sobre la utilidad de la planta de cáñamo, dar a conocer algunos datos botánicos y agroindustriales que posee el cultivar, poniendo atención y foco en la semilla como materia prima de productos alimenticios . . .",
+        "web": null,
+        "instagram": "https://www.instagram.com/recetascanameras/",
         "facebook": null,
         "x": null,
-        "foto": "/imgs/Disertantes/Pablo Cunto/pabloCunto.png",
-        "logo": "/imgs/Disertantes/Pablo Cunto/chita.png"
+        "foto": "/imgs/Disertantes/RecetasCanameras/foto.jpg",
+        "logo": null
     }
 ]
