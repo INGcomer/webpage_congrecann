@@ -21,11 +21,12 @@ root.render(
         <Route path="/home" element={<Index />} />
 
         <Route path="/expocitores" element={<Expocitores />} />
+        <Route path="/expositores" element={<Expocitores />} />
 
         <Route
           path="/venta-entradas"
-          element={<Redirect loc="https://www.showstickets.ar/event/mendocann" />}
-          // element={<VentaEntradas />}
+          // element={<Redirect loc="https://www.showstickets.ar/event/mendocann" />}
+          element={<VentaEntradas />}
         />
 
       </Routes>
