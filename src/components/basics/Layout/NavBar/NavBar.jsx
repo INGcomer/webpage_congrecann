@@ -1,45 +1,108 @@
+// React
+import * as React from 'react';
+// Components
 import Button from '../../Button/Button'
+// MUI
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Menu from '@mui/material/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
+import Container from '@mui/material/Container';
+import Avatar from '@mui/material/Avatar';
+// import Button from '@mui/material/Button';
+import Tooltip from '@mui/material/Tooltip';
+import MenuItem from '@mui/material/MenuItem';
+import AdbIcon from '@mui/icons-material/Adb';
+// css
 import './NavBar.css'
+// img
+import LOGO from './imgs/logo.svg'
 
-export default function NavBar() {
-    return (
-        <nav>
-            <div className="izquierda">
-                {/* <a href="#Header">
-                    <img src={logo} alt="" />
-                </a> */}
-            </div>
-            <div className="central">
-                <a href="/" className='logo'>
-                <svg 
-                    id="Capa_1" 
-                    className='logo' 
-                    data-name="Capa 1" 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    viewBox="0 0 1920 300"
-                >
-                    <g>
-                        <path class="cls-1" d="m72.47,24.38l46.68,119.83h7.31l47.02-119.83h68.98v233.39h-43.89V75.92h-8.02l-45.99,118.1h-49.12l-46.33-118.44h-7.65v182.19H0V24.38h72.47Z" />
-                        <path class="cls-1" d="m353.25,77.68c48.07,0,83.26,26.48,83.26,80.13v23.33h-129.23v2.44c0,30.66,15.67,45.28,41.81,45.28h4.18c25.09,0,37.63-10.44,41.81-27.87h39.37c-4.18,37.63-32.05,60.27-81.16,60.27h-4.18c-47.73,0-83.26-26.12-83.26-79.42v-24.04c0-53.65,35.53-80.13,83.26-80.13h4.14Zm-45.97,72.45h87.78c-1.05-26.12-17.77-40.05-42.15-40.05h-4.18c-25.43,0-40.4,13.57-41.45,40.05Z" />
-                        <path class="cls-1" d="m500.95,81.16v21.25h6.97c10.1-15.67,27.51-24.74,49.47-24.74h4.18c34.48,0,59.22,21.59,59.22,69.66v110.42h-42.84v-102.77c0-27.17-13.59-40.42-36.24-40.42h-4.18c-22.98,0-36.58,13.23-36.58,40.42v102.77h-42.84V81.13h42.84v.02Z" />
-                        <path class="cls-1" d="m813.07,0v257.77h-42.84v-20.56h-6.97c-11.84,16.38-29.61,24.04-50.86,24.04h-4.18c-39.71,0-67.58-25.43-67.58-79.76v-24.04c0-53.99,27.87-79.76,67.58-79.76h4.18c21.25,0,39.02,8.02,50.86,23.69h6.97V0h42.84Zm-129.57,157.1v24.74c0,29.27,15.33,44.94,41.45,44.94h3.84c26.14,0,41.45-15.67,41.45-44.94v-24.74c0-28.9-14.99-44.94-41.45-44.94h-3.84c-26.14,0-41.45,16.04-41.45,44.94Z" />
-                        <path class="cls-1" d="m923.15,77.68c48.41,0,83.94,26.82,83.94,79.76v24.04c0,53.65-35.53,79.76-83.94,79.76h-4.18c-48.78,0-84.31-26.12-84.31-79.76v-24.04c0-52.96,35.53-79.76,84.31-79.76h4.18Zm-45.63,79.42v24.74c0,28.9,13.94,44.94,41.45,44.94h4.18c27.17,0,41.1-16.02,41.1-44.94v-24.74c0-28.56-13.94-44.94-41.1-44.94h-4.18c-27.17,0-41.45,16.38-41.45,44.94Z" />
-                        <path class="cls-1" d="m1129.74,20.91c58.17,0,95.43,30.66,95.43,89.88v3.84h-44.23v-3.84c-.34-34.84-19.51-51.54-51.54-51.54h-6.26c-31.69,0-52.25,17.41-52.25,54.7v53.65c0,39.02,20.56,55.38,52.25,55.38h6.63c31.69,0,52.25-16.02,52.25-52.25v-2.44h44.6v2.44c0,61.3-38.32,90.57-96.83,90.57h-6.63c-57.83,0-96.85-29.61-96.85-93.7v-53.65c0-61.67,39.02-93.01,96.85-93.01h6.58v-.02Z" />
-                        <path class="cls-1" d="m1324.47,77.68c50.86,0,75.58,23.69,75.58,63.74v116.34h-42.5v-20.56h-6.97c-12.89,16.72-28.92,24.04-52.96,24.04-31.35,0-57.48-16.02-57.48-53.65,0-33.08,21.59-53.3,71.06-53.3h46.33v-12.89c0-21.96-12.54-31-33.08-31h-4.18c-18.12,0-33.08,9.05-33.08,30.66h-41.81c0-39.71,26.12-63.4,74.89-63.4h4.2v.02Zm-42.15,126.78c0,14.99,10.44,23.33,30.3,23.33,24.04,0,44.94-11.15,44.94-41.45v-5.23h-42.84c-22.98.02-32.4,8.38-32.4,23.35Z" />
-                        <path class="cls-1" d="m1466.24,81.16v21.25h6.97c10.1-15.67,27.51-24.74,49.47-24.74h4.18c34.48,0,59.22,21.59,59.22,69.66v110.42h-42.84v-102.77c0-27.17-13.59-40.42-36.24-40.42h-4.18c-22.98,0-36.58,13.23-36.58,40.42v102.77h-42.84V81.13h42.84v.02Z" />
-                        <path class="cls-1" d="m1652.26,81.16v21.25h6.97c10.1-15.67,27.51-24.74,49.47-24.74h4.18c34.48,0,59.22,21.59,59.22,69.66v110.42h-42.84v-102.77c0-27.17-13.59-40.42-36.24-40.42h-4.18c-22.98,0-36.58,13.23-36.58,40.42v102.77h-42.84V81.13h42.84v.02Z" />
-                    </g>
-                    <path class="cls-1" d="m1884.49,174.4c2.96-1.16,5.9-2.74,8.53-4.91,18.27-14.94,26.97-19.51,26.97-19.51,0,0-19.34,2.17-33.64,8.88-9.54,4.48-16.94,11.15-20.82,15.09-.11.09-.24.19-.34.28-.04.04-.13.04-.26.06-.02-.15-.09-.32-.02-.41.09-.13.17-.28.26-.41,4.44-4.67,16.4-17.9,26.67-34.82,12.89-21.23,14.86-43.46,14.86-43.46,0,0-15.22,14.17-28.11,35.42-9.03,14.88-12.89,30.88-14.37,39.11-.09.36-.19.71-.28,1.07-.28,1.03-.56,2.04-.81,3.07-.06.21-.02.45-.32.51s-.47-.11-.45-.49c.04-.62.09-1.22.09-1.84,1.72-6.3,6.71-26.44,7.78-49.49,1.31-27.9-6.71-48.91-6.71-48.91,0,0-9.41,20.2-10.72,48.11-.99,20.99,4.63,40.01,7.48,48.16.15.86.28,1.69.43,2.55.06.34.17.66.21,1.01.02.21-.02.45-.04.66l-.19.06c-.15-.17-.3-.34-.41-.54-.09-.15-.06-.34-.13-.49-.32-.69-.64-1.37-.99-2.06-1.69-7.74-6.26-24.38-16.49-39.52-13.89-20.58-33.96-33.04-33.96-33.04,0,0,7.23,21.12,21.12,41.7,11.41,16.92,24.44,29.85,28.73,33.92.04.15.04.34-.02.54-.24-.17-.43-.3-.6-.45-.13-.11-.26-.21-.36-.32-3.88-3.95-11.26-10.59-20.78-15.05-14.32-6.71-39.69-8.04-39.69-8.04,0,0,4.97.84,23.24,15.78,4.65,3.82,11.6,6.26,18.42,7.83-.19.02-.39.04-.56.06-6.93.77-17.05,11.88-18.5,13.49.75-.64,4.61-2.64,23.89-4.35,5.4-.47,9.78-2.34,12.74-3.99.3-.11.6-.19.88-.28.86-.26,1.69-.56,2.36-1.16.13-.11.28-.21.43-.28.11-.04.24.04.43.09-.17.24-.28.39-.39.54-.47.62-.94,1.2-1.37,1.84-.54.77-1.03,1.57-1.5,2.38-.21.36-.41.75-.56,1.14-.24.58-.43,1.16-.62,1.74-.17.47-.34.92-.47,1.39-.15.54-.21,1.09-.51,1.61-.21.39-.32.88-.36,1.35-.13,1.24-.21,2.51-.3,3.77-.02.45,0,.9.02,1.33,0,.15.11.28.19.49.15-.17.24-.26.28-.36.36-.75.71-1.52,1.07-2.29.66-1.37,1.33-2.77,2.04-4.12.6-1.14,1.22-2.25,1.63-3.49.47-1.46,1.01-2.89,1.54-4.33.11-.28.26-.54.45-.75.26-.32.77-.3.96.04.24.41.49.81.6,1.27.41,1.67,1.16,3.19,1.97,4.7.11.19.19.41.26.6.3.81.47,1.65.94,2.4.28.45.47.99.64,1.5.36,1.24.69,2.51,1.03,3.77.02.11.11.21.21.45.21-.56.39-.99.56-1.39.28-.66.43-1.35.43-2.1,0-1.39-.17-2.74-.41-4.12-.26-1.48-1.03-2.74-1.69-4.01-.73-1.33-1.74-2.51-2.64-3.75-.28-.39-.58-.75-.84-1.14-.06-.09-.09-.32-.02-.39.04-.04.15-.06.24-.06,1.39,1.29,4.37,3.3,10.48,5.19,9.99,3.09,31.13-4.57,31.13-4.57,0,0-12.86-3.32-20.35-4.16-.17-.07-.39-.09-.6-.11Z" />
-                </svg>
-                </a>
-                
+// const pages = ['Products', 'Pricing', 'Blog'];
+const pages = [{texto: 'Ser Expositor', link:'/expocitores'}];
 
-            </div>
-            <div className="derecha">
-                {/* <Button>  INSCRIBIRSE  </Button> */}
-                <Button className="customButtom" link="/expocitores" > Ser Expositor  </Button>
-                {/* <a href="#contacto"> CONTACTO </a> */}
-           </div>
-        </nav>
-    );
+function ResponsiveAppBar() {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+
+  return (
+    <AppBar position="static" className='ResponsiveAppBar'>
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+
+          <Box sx={{ flexGrow: 0 }}>
+            <a href="/">
+              <img src={LOGO} alt="" sx={{ p: 0 }} />
+            </a>
+          </Box>
+
+
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
+            >
+              {pages.map((page) => (
+                <MenuItem key={page.texto} onClick={handleCloseNavMenu}>
+                  <a href={page.link}>
+                  <Typography textAlign="center">{page.texto}</Typography>
+                  </a>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            {pages.map((page) => (
+              <Button className="customButtom" link={page.link} > {page.texto}  </Button>
+            ))}
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
+  );
 }
+export default ResponsiveAppBar;

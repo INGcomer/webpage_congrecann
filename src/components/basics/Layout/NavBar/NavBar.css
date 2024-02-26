@@ -1,83 +1,47 @@
-nav {
-    position: fixed;
+.ResponsiveAppBar {
+    position: fixed !important;
     top: 0;
     z-index: 500;
 
-    width: 100%;
-    height: fit-content;
+    margin-top: 10px;
 
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: transparent !important;
+
+    box-shadow: none !important;
 
     display: flex;
-    justify-content: space-around;
 }
 
-.cls-1 {
-    fill: var(--Principal);
-    stroke-width: 0px;
-}
-
-nav div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-    gap: 50px;
-}
-
-nav a {
-    color: var(--Principal);
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root a{
     text-decoration: none;
-
-    font-weight: 400;
-    font-style: normal;
-
-    border-style: solid;
-    border-width: 0px;
-    border-bottom-width: 1px;
-    border-color: transparent;
-
-    transition: all 0.25s;
-}
-nav a:hover{
-    border-color: var(--Acento1);
-}
-nav a.logo:hover{
-    border-color: transparent;
+    color: black;
 }
 
-nav .izquierda,
-nav .derecha {
-    width: 15%;
+.ResponsiveAppBar a.button, .ResponsiveAppBar a.button .texto, .ResponsiveAppBar a.button .sombra{
+    height: 30px;
 }
 
-nav .central {
-    width: 70%;
+.ResponsiveAppBar a.button {
+    margin-left: 30px;
 }
 
-nav .central .logo{
-    height: 50px;
+.ResponsiveAppBar img {
+    height: 40px;
+    width: auto;
 }
 
-nav div.izquierda img {
-    height: 50px;
-}
-
-@media (max-width: 1400px) {
-    nav .central .logo{
-        height: 30px;
+@media (min-width: 900px) {
+    .css-1t6c9ts {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
 
-@media (max-width: 500px) {
-
-    nav .izquierda, nav .derecha, nav .central {
-        width: fit-content
-    }
-    nav .precindible {
-        display: none;
+@media (min-width: 0px) {
+    .css-1lvtzne {
+        flex-direction: row-reverse;
     }
 }
