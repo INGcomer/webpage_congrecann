@@ -63,8 +63,8 @@ export default function Entradas() {
                 </div>
             </div>
 
-            <a  className="comprar disabled"> <span>Compra disponible en:</span> <span><Clock deadline={deadline}/></span>  </a>
-            {/* <a href="https://www.showstickets.ar/event/mendocann" className="comprar"> <span>Comprar entradas</span>  </a> */}
+            {/* <a  className="comprar disabled"> <span>Compra disponible en:</span> <span><Clock deadline={deadline}/></span>  </a> */}
+            <a href="https://www.showstickets.ar/event/mendocann" className="comprar"> <span>Comprar entradas</span>  </a>
             
 
         </section>
