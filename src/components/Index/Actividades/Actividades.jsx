@@ -1,3 +1,5 @@
+// Components
+import Button from '../../basics/Button/Button'
 // css
 import './Actividades.css';
 // MUI
@@ -29,9 +31,10 @@ export default function Actividades() {
                     </div>
                     <div className="descripcion">
                         <CampaignIcon/>
-                        <h3> Conferencias Magistrales </h3>
+                        <h3> Conferencias Magistrales y Workshops </h3>
                         Descubre las claves de la industria del cannabis con expertos destacados.
-                        <button className='saverMas'>Saber más</button>
+                        {/* <button className='saverMas'>Saber más</button> */}
+                        <Button> Saber más </Button>
                     </div>
                 </div>
 
@@ -43,11 +46,11 @@ export default function Actividades() {
                         <PeopleIcon/>
                         <h3> Foros de Debate </h3>
                         Perspectivas que contribuyen al futuro del cannabis en Argentina.
-                        <button className='saverMas'>Saber más</button>
+                        <Button> Saber más </Button>
                     </div>
                 </div>
 
-                <div className="actividad">
+                {/* <div className="actividad">
                     <div className='imgcontainer'>
                         <img src={Workshops} alt="Chica dando una conferencia" />
                     </div>
@@ -57,7 +60,7 @@ export default function Actividades() {
                         Habilidades prácticas para el aprendizaje del cannabis.
                         <button className='saverMas'>Saber más</button>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="actividad">
                     <div className='imgcontainer'>
@@ -67,11 +70,11 @@ export default function Actividades() {
                         <HandshakeIcon/>
                         <h3> Plataforma B2B </h3>
                         Maximiza oportunidades de negocio y lleva tu empresa al siguiente nivel.
-                        <button className='saverMas'>Saber más</button>
+                        <Button> Saber más </Button>
                     </div>
                 </div>
 
-                <div className="actividad">
+                {/* <div className="actividad">
                     <div className='imgcontainer'>
                         <img src={cultura} alt="Chica dando una conferencia" />
                     </div>
@@ -81,7 +84,7 @@ export default function Actividades() {
                         Celebra la diversidad y creatividad de la comunidad cannábica.
                         <button className='saverMas'>Saber más</button>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="actividad">
                     <div className='imgcontainer'>
@@ -89,9 +92,9 @@ export default function Actividades() {
                     </div>
                     <div className="descripcion">
                         <MusicNoteIcon/>
-                        <h3> Shows en Vivo </h3>
+                        <h3> Shows en Vivo y Eventos Culturales </h3>
                         Sunset, DJ’s, actividades al aire libre y muchas sorpresas más.
-                        <button className='saverMas'>Saber más</button>
+                        <Button> Saber más </Button>
                     </div>
                 </div>
 

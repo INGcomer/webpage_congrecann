@@ -1,3 +1,5 @@
 .Index {
-    background-color: var(--Oscuro);
+    /* background-color: var(--Oscuro); */
+    background-color: var(--Acento2);
+    background-color: var(--Principal);
 }

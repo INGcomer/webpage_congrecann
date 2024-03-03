@@ -25,6 +25,7 @@
     justify-content: center;
 
     background-color: var(--Acento1);
+    
 
     transform: rotate(-2.5deg);
 }
@@ -45,6 +46,7 @@
     z-index: 2;
 
     color: var(--Principal);
+    color: var(--Oscuro);
     font-size: 1.1rem;
     font-weight: 400;
     font-style: normal;

@@ -16,6 +16,7 @@
     width: 100%;
     text-align: center;
     color: var(--Principal);
+    color: var(--Oscuro);
     font-size: 2rem;
 }
 

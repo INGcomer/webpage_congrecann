@@ -11,6 +11,9 @@
 
     display: flex;
 }
+.css-1pz7awu-MuiButtonBase-root-MuiIconButton-root{
+    color: var(--Oscuro) !important;
+}
 
 .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root a{
     text-decoration: none;

@@ -4,39 +4,65 @@
 
     position: relative;
     z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #Actividades h2 {
     width: 100%;
 
-    color: var(--Principal);
+    /* color: var(--Principal); */
+    color: var(--Oscuro);
     font-size: 2rem;
     text-align: center;
 }
 
 #Actividades .Lista {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
     gap: 250px;
+    gap: 50px;
 
     /* padding-left: 10px; */
 
 }
 
 #Actividades .Lista .actividad {
-    height: 300px;
-    width: 300px;
+    /* height: 300px; */
+    width: 900px;
 
-    position: relative;
+    /* position: relative; */
     z-index: 2;
+
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+
+    gap: 20px;
+
+    /* background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px; */
 }
 
 #Actividades .Lista .actividad .imgcontainer {
-    height: 100%;
-    width: auto;
+    height: 250px;
+    width: 250px;
+    /* height: 100%;
+    width: auto; */
+
+    margin-left: 50px;
 
     border-radius: 50%;
+    /* border-radius: 50px; */
 
     overflow: hidden;
 }
@@ -48,31 +74,37 @@
 
 #Actividades .Lista .actividad .descripcion {
     height: 250px;
-    width: 200px;
+    /* width: 400px; */
+    /* width: 250px; */
 
     padding: 50px;
 
     border-radius: 50px;
 
     color: var(--Principal);
+    color: var(--Oscuro);
 
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    /* border-radius: 16px; */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3); */
 
-    position: absolute;
+    /* position: absolute;
     bottom: -150px;
-    left: -150px;
+    left: -150px; */
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+#Actividades .Lista .actividad .descripcion a.button,
+#Actividades .Lista .actividad .descripcion a.button .texto, 
+#Actividades .Lista .actividad .descripcion a.button .sombra{
+    height: 30px;
+    width: 90%;
+}
 #Actividades .Lista .actividad .descripcion svg {
     height: 70px;
     width: 70px;
@@ -128,6 +160,7 @@
 
 #Actividades .background .cls-1 {
     fill: black;
+    fill: var(--Oscuro);
 }
 
 #Actividades .background.uno {
@@ -159,6 +192,7 @@
 
 @media (max-width: 1400px) {
     #Actividades .Lista {
+        width: 90%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -179,11 +213,18 @@
 }
 
 @media (max-width: 500px) {
+    #Actividades {
+        padding-bottom: 0;
+    }
     #Actividades .Lista {
         justify-content: flex-end;
         gap: 150px;
 
         padding-right: 10px;
+    }
+
+    #Actividades .Lista .actividad {
+        flex-direction: column;
     }
 
     #Actividades .background {

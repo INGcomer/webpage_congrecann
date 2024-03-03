@@ -21,7 +21,7 @@ body {
 
   font-family: "acumin-pro", sans-serif;
 
-  background-color: var(--Oscuro);
+  /* background-color: var(--Oscuro); */
 }
 
 code {
@@ -41,8 +41,11 @@ code {
   mix-blend-mode: hard-light;
   mix-blend-mode: multiply;
   opacity: 30%;
+  opacity: 10%;
 
   pointer-events: none;
+
+  /* display: none; */
 }
 
 .instagram{

@@ -6,6 +6,7 @@
     
     /* background-color: var(--Oscuro); */
     color: var(--Principal);
+    color: var(--Oscuro);
     font-size: 2rem;
 
     display: flex;
@@ -29,6 +30,20 @@
     height: 100px;
     width: auto;
 
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.2);
+    background: rgba(42, 52, 48, 0.3);
+    background-color: var(--Oscuro);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 20px;
+
+
 }
 #Sponsors .expocitor{
     height: 200px;
@@ -40,9 +55,8 @@
 
     color: var(--Principal);
 
-    /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
-    /* border-radius: 16px; */
+    background: rgba(42, 52, 48, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -82,8 +96,6 @@
 
     border-radius: 20px;
 
-    color: var(--Principal);
-
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     /* border-radius: 16px; */
@@ -107,6 +119,7 @@
     padding: 0;
 
     color: white;
+    color: var(--Oscuro);
 
     display: flex;
     align-items: center;

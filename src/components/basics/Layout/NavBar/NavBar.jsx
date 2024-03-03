@@ -19,7 +19,8 @@ import AdbIcon from '@mui/icons-material/Adb';
 // css
 import './NavBar.css'
 // img
-import LOGO from './imgs/logo.svg'
+// import LOGO from './imgs/logo.svg'
+import LOGO from './imgs/logo_oscuro.svg'
 
 // const pages = ['Products', 'Pricing', 'Blog'];
 const pages = [{texto: 'Ser Expositor', link:'/expocitores'}];
