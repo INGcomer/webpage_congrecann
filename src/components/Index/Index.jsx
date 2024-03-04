@@ -10,7 +10,7 @@ import Contacto from './Contacto/Contacto';
 import Actividades from './Actividades/Actividades';
 import TextoIntermedio from './TextoIntermedio/TextoIntermedio';
 import Expocitores from './Sponsors/Expocitores';
-import Disertantes from './Sponsors/Disertantes';
+import Disertantes from './Sponsors/Disertantes/Disertantes';
 // MUI
 import InstagramIcon from '@mui/icons-material/Instagram';
 // css

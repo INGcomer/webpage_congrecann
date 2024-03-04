@@ -10,6 +10,7 @@ import reportWebVitals from './reportWebVitals';
 import Index from './components/Index/Index';
 import Expocitores from "./components/Expocitores/Expocitores";
 import VentaEntradas from './components/VentaEntradas/VentaEntradas';
+import Conferencias from './components/Actividades/Conferencias/Conferencias';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,10 +24,12 @@ root.render(
         <Route path="/expocitores" element={<Expocitores />} />
         <Route path="/expositores" element={<Expocitores />} />
 
+        <Route path="/actividades/conferencias" element={<Conferencias />} />
+
         <Route
           path="/venta-entradas"
-          // element={<Redirect loc="https://www.showstickets.ar/event/mendocann" />}
-          element={<VentaEntradas />}
+          element={<Redirect loc="https://www.showstickets.ar/event/mendocann" />}
+          // element={<VentaEntradas />}
         />
 
       </Routes>

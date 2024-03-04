@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 // import required modules
 import { Pagination, Autoplay } from 'swiper/modules';
 // data
-import Json from './Data/Expocitores.json'
+import Json from '../../../Data/Expocitores.json'
 // css
 import './Sponsors.css';
 // icons

@@ -34,6 +34,7 @@ export default function Actividades() {
                         <h3> Conferencias Magistrales y Workshops </h3>
                         Descubre las claves de la industria del cannabis con expertos destacados.
                         {/* <button className='saverMas'>Saber más</button> */}
+                        {/* <Button link="/actividades/conferencias"> Saber más </Button> */}
                         <Button> Saber más </Button>
                     </div>
                 </div>

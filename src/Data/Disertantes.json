@@ -2,6 +2,7 @@
     {
         "nombre": "Federico Benitez",
         "tipo": "Taller",
+        "esenario": "Escenario Industria y Cultivo",
         "titulo": "Terpenos: Descubriendo los aromas del cannabis y sus propiedades.",
         "descripcion": "Se trata de un taller/cata de terpenos presentes en el Cannabis. Abordaremos desde una perspectiva química y sensorial los princpales terpenos presentes en la planta y en simultáneo los asistentes podrán oler dichos terpenos.",
         "web": "https://terpenoteca.com/",
@@ -14,6 +15,7 @@
     {
         "nombre": "Pablo Cunto",
         "tipo": "Conferencia",
+        "esenario": "Escenario Industria y Cultivo",
         "titulo": "Cultivo de autoflorecientes.",
         "descripcion": "Detalles más importantes del cultivo de plantas auto florecientes. Para optimizar la Cosecha.",
         "web": "https://chitaseeds.com/",
@@ -26,6 +28,7 @@
     {
         "nombre": "Germán Pereira y Roxana Ojeda ",
         "tipo": "Taller",
+        "esenario": "Escenario Industria y Cultivo",
         "titulo": "Importancia de una Alimentación con Cáñamo.",
         "descripcion": "Repaso histórico-social sobre la utilidad de la planta de cáñamo, dar a conocer algunos datos botánicos y agroindustriales que posee el cultivar, poniendo atención y foco en la semilla como materia prima de productos alimenticios . . .",
         "web": null,
