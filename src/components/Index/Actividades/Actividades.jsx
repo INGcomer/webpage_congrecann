@@ -22,7 +22,6 @@ export default function Actividades() {
     return (
         <section id='Actividades'>
             <h2> Actividades </h2>
-
             <div className="Lista">
 
                 <div className="actividad">
