@@ -14,6 +14,7 @@ import ingcome from './img/sponsors/ingcome.png'
 import StrechArt from './img/sponsors/ArtStrech.png'
 import Criolla from './img/sponsors/la criolla.png'
 import Multitudes from './img/sponsors/multitudes.png'
+import ohcho from './img/sponsors/ohcho blanco.png'
 
 export default function Sponsors() {
     const [CantidadSlides, SetCantidadSlides] = useState(2)
@@ -46,6 +47,7 @@ export default function Sponsors() {
                 <SwiperSlide> <img className='sponsord' src={StrechArt} alt="" /> </SwiperSlide>
                 <SwiperSlide> <img className='sponsord' src={Multitudes} alt="" /> </SwiperSlide>
                 <SwiperSlide> <img className='sponsord' src={ingcome} alt="" /> </SwiperSlide>
+                <SwiperSlide> <img className='sponsord' src={ohcho} alt="" /> </SwiperSlide>
             </Swiper>
         </section>
     );
