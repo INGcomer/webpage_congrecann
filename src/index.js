@@ -6,6 +6,8 @@ import Redirect from './components/basics/Redirect/Redirect';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
+import MetaPixel from './utils/meta/metaPixel';
+
 
 import Index from './components/Index/Index';
 import Expocitores from "./components/Expocitores/Expocitores";
@@ -15,6 +17,7 @@ import Conferencias from './components/Actividades/Conferencias/Conferencias';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <MetaPixel/>
     <BrowserRouter>
       <Routes>
         {/* paguina de inicio */}
