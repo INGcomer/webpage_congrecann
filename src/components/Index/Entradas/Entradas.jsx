@@ -8,7 +8,7 @@ import './Entradas.css';
 // imgs
 
 
-export default function Entradas() {
+export default function Entradas({ReactPixel}) {
     let deadline = "February, 29, 2024, 16:20:00";
 
     return (

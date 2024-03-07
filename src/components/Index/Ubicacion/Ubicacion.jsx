@@ -21,7 +21,7 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-export default function Ubicacion() {
+export default function Ubicacion({ReactPixel}) {
     return (
         <section id='Ubicacion'>
 
