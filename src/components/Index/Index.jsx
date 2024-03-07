@@ -46,7 +46,7 @@ export default function Index() {
 
         <Actividades />
 
-        <Entradas />
+        <Entradas ReactPixel={ReactPixel}/>
 
         {/* <Contador/> */}
 
@@ -56,17 +56,13 @@ export default function Index() {
 
         <Ubicacion />
 
-        <Contacto />
+        <Contacto ReactPixel={ReactPixel}/>
         {/* <Footer/> */}
-
-        <button onClick={() => { ReactPixel.track('Click');  }}>
-          kk
-        </button>
 
 
         <img src={textura} alt="" className='TexturaFondoGeneral' />
 
-        <a href="https://www.instagram.com/mendocannok/" className='instagram'>
+        <a href="https://www.instagram.com/mendocannok/" className='instagram' onClick={() => { ReactPixel.track('Contactar', {"Descripción": "Click en el link de instagram"});  }}>
           <InstagramIcon />
         </a>
 

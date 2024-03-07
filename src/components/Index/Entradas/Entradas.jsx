@@ -64,7 +64,7 @@ export default function Entradas() {
             </div>
 
             {/* <a  className="comprar disabled"> <span>Compra disponible en:</span> <span><Clock deadline={deadline}/></span>  </a> */}
-            <a href="https://www.showstickets.ar/event/mendocann" className="comprar"> <span>Comprar entradas</span>  </a>
+            <a href="https://www.showstickets.ar/event/mendocann" className="comprar" onClick={() => {ReactPixel.track('Comprar', {"Descripción": "Click en el link de compra"})}}> <span>Comprar entradas</span>  </a>
             
 
         </section>

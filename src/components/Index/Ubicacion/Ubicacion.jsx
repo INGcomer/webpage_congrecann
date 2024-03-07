@@ -32,7 +32,11 @@ export default function Ubicacion() {
                     <h3> Centro de Congresos y Exposiciones Dr. Emilio Civit </h3>
                     <small> Virgen del Carmen de Cuyo 610, M5500 Mendoza </small>
                 </div>
-                <a href="https://www.google.com/maps/place/Auditorium+Angel+Bustelo/@-32.8980824,-68.8526397,17z/data=!3m1!4b1!4m6!3m5!1s0x967e090e883d34e5:0xa7e2f899c46ce069!8m2!3d-32.8980824!4d-68.8500648!16s%2Fg%2F1tdqvrfs?entry=ttu">
+                
+                <a 
+                    href="https://www.google.com/maps/place/Auditorium+Angel+Bustelo/@-32.8980824,-68.8526397,17z/data=!3m1!4b1!4m6!3m5!1s0x967e090e883d34e5:0xa7e2f899c46ce069!8m2!3d-32.8980824!4d-68.8500648!16s%2Fg%2F1tdqvrfs?entry=ttu"
+                    onClick={() => {ReactPixel.track('Buscar ubicación', {"Descripción": "Click en el link de google maps"})}}
+                >
                     <Button>
                         Ver en google maps
                     </Button>

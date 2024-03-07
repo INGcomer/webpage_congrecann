@@ -14,12 +14,14 @@ import Button from '../../basics/Button/Button'
 import './Contacto.css';
 
 
-export default function Contacto() {
+export default function Contacto({ReactPixel}) {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     // Alerts
     const MySwal = withReactContent(Swal)
     const onSubmit = data => {
         console.log(data);
+
+        ReactPixel.track('Contactar', {"Descripción": "Respuesta en el formulario de contacto"})
 
         MySwal.fire({
             didOpen: () => { Swal.showLoading() }
