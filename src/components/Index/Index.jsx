@@ -29,7 +29,7 @@ export default function Index() {
     autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
     debug: true, // enable logs
   };
-  ReactPixel.init('412969807922130', null, options);
+  ReactPixel.init('412969807922130', advancedMatching, options);
   return (
     <BaseLayout>
 
