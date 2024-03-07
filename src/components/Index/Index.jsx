@@ -19,11 +19,17 @@ import "./Index.css"
 import logo from './logo.svg';
 import textura from './textura papel madera.jpg'
 
-// import ReactPixel from 'react-facebook-pixel';
+import ReactPixel from 'react-facebook-pixel';
 
 
 
 export default function Index() {
+  const advancedMatching = { em: 'some@email.com' }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
+  const options = {
+    autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
+    debug: true, // enable logs
+  };
+  ReactPixel.init('412969807922130', null, options);
   return (
     <BaseLayout>
 
@@ -52,6 +58,11 @@ export default function Index() {
 
         <Contacto />
         {/* <Footer/> */}
+
+        <button onClick={() => { ReactPixel.track('Click');  }}>
+          kk
+        </button>
+
 
         <img src={textura} alt="" className='TexturaFondoGeneral' />
 
