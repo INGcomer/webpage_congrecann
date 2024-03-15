@@ -31,14 +31,17 @@ export default function Expocitores() {
                 modules={[Autoplay, Pagination]}
                 className="mySwiper"
                 autoplay={{
-                    delay: 6000,
+                    // delay: 6000,
+                    delay: 3000,
                     disableOnInteraction: false,
                 }}
             >
                 {Json.map((expocitor) => {
-                    return (
-                        <SwiperSlide> <Expocitor expocitor={expocitor} /> </SwiperSlide>
-                    )
+                    if (expocitor.show) {
+                        return (
+                            <SwiperSlide> <Expocitor expocitor={expocitor} /> </SwiperSlide>
+                        )
+                    }
                 })}
             </Swiper>
 

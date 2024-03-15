@@ -6,7 +6,8 @@
         "instagram": "https://www.instagram.com/saviasemillas/",
         "facebook": "https://www.facebook.com/profile.php?id=61552669291406",
         "x": null,
-        "img": "/imgs/Expocitores/IMG-20240206-WA0001_-_Gustavo_Mamianetti-removebg-preview.png"
+        "img": "/imgs/Expocitores/IMG-20240206-WA0001_-_Gustavo_Mamianetti-removebg-preview.png",
+        "show": true
     },
     {
         "nombre_linea_1": "KIEV",
@@ -15,7 +16,8 @@
         "instagram": "https://www.instagram.com/kievingenieria/",
         "facebook": null,
         "x": null,
-        "img": "/imgs/Expocitores/LOGO KIEV - Kiev ingeniería en cultivos.png"
+        "img": "/imgs/Expocitores/LOGO KIEV - Kiev ingeniería en cultivos.png",
+        "show": true
     },
     {
         "nombre_linea_1": "Fábrica Chiatti",
@@ -24,6 +26,47 @@
         "instagram": "https://www.instagram.com/fabrica_chiatti/",
         "facebook": "https://www.facebook.com/chiatti.chiatti",
         "x": null,
-        "img": "/imgs/Expocitores/chiati.png"
+        "img": "/imgs/Expocitores/chiati.png",
+        "show": true
+    },
+    {
+        "nombre_linea_1": "Estudio 420",
+        "nombre_linea_2": null,
+        "web": "http://www.estudio4veinte.com",
+        "instagram": "https://www.instagram.com/estudio4veinte/",
+        "facebook": null,
+        "x": "https://twitter.com/estudio_420",
+        "img": "/imgs/Expocitores/420.png",
+        "show": true
+    },
+    {
+        "nombre_linea_1": "CANNATECH",
+        "nombre_linea_2": null,
+        "web": null,
+        "instagram": null,
+        "facebook": null,
+        "x": null,
+        "img": "/imgs/Expocitores/cannatech.png",
+        "show": false
+    },
+    {
+        "nombre_linea_1": "Insativa",
+        "nombre_linea_2": null,
+        "web": "www.insativa.com.ar",
+        "instagram": "https://www.instagram.com/insativa.ar/",
+        "facebook": "https://www.facebook.com/insativa.ar",
+        "x": null,
+        "img": "/imgs/Expocitores/insativa.png",
+        "show": false
+    },
+    {
+        "nombre_linea_1": "Semishop",
+        "nombre_linea_2": null,
+        "web": "https://autocultivosemishop.com/",
+        "instagram": "https://www.instagram.com/autocultivo_semishop/",
+        "facebook": null,
+        "x": null,
+        "img": "/imgs/Expocitores/semishop.png",
+        "show": false
     }
 ]
