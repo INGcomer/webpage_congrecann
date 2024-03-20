@@ -13,6 +13,7 @@ import Index from './components/Index/Index';
 import Expocitores from "./components/Expocitores/Expocitores";
 import VentaEntradas from './components/VentaEntradas/VentaEntradas';
 import Conferencias from './components/Actividades/Conferencias/Conferencias';
+import DashBoard from './components/DashBoard/DashBoard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +29,8 @@ root.render(
         <Route path="/expositores" element={<Expocitores />} />
 
         <Route path="/actividades/conferencias" element={<Conferencias />} />
+
+        <Route path="/dashboard" element={<DashBoard />} />
 
         <Route
           path="/venta-entradas"
