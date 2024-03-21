@@ -1,8 +1,70 @@
 .DashBoard {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     height: 100vh;
     width: 100%;
+}
+
+.DashBoard .entrada {
+    display: grid;
+    grid-template-columns: 14% 13% 13% 13% 18% 9% 20%;
+
+    height: 5vh;
+    width: 100%;
+
+    /* background-color: red; */
+}
+
+.DashBoard .entrada.titulos {
+    height: 10vh;
+
+    text-align: center;
+    font-weight: 800;
+}
+
+.DashBoard .entrada div{
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.199);
+    border-style: solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.DashBoard .codigo{
+    height: 100%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.DashBoard .codigo form{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+    .DashBoard .entrada {
+        font-size: 0.5rem;
+
+        text-align: center;
+    }
+
+    .DashBoard .entrada {
+        display: grid;
+        grid-template-columns: 14% 13% 13% 13% 14% 18% 15%;
+    
+        height: 5vh;
+        width: 100%;
+    
+        /* background-color: red; */
+    }
 }
