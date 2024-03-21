@@ -1,5 +1,5 @@
 // React
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useForm } from "react-hook-form";
 // Sweet Alert
 import Swal from 'sweetalert2';
@@ -32,9 +32,37 @@ export default function DashBoard() {
                 icon: 'error'
             })
         }
-
-        
     }
+
+    // console.log(parseFloat("18000"))
+
+    // var entradas_general = 0
+    // var entradas_b2b = 0
+    // var entradas_vip = 0
+    // var total_ingreso = 0
+    // var total_comicion = 0
+
+    // useEffect(() => {
+    //     EntradasVendidas.map((registro, index) => {
+    //         if (registro.Codigo == Codigo) {
+    //             return (
+    //                 <Entrada clase={"entrada"} registro={registro} />
+    //             )
+    //         }
+    //     })
+
+    //     for (let index = 0; index < EntradasVendidas.length; index++) {
+    //         entradas_general = entradas_general + EntradasVendidas[index].General
+    //         entradas_b2b = entradas_b2b + EntradasVendidas[index].B2B
+    //         entradas_vip = entradas_vip + EntradasVendidas[index].VIP
+
+    //         let total_ingreso_unitario = 0
+
+
+            
+    //     }
+
+    // }, [Codigo]);
 
     return (
         <div className="DashBoard">
@@ -46,7 +74,7 @@ export default function DashBoard() {
                 <div className='codigo'>
                     <h2> Porfavor ingresa un codigo para ver las ventas </h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <TextField id="outlined-basic" label="Codigo" variant="outlined" {...register("Codigo")}/>
+                        <TextField id="outlined-basic" label="Codigo" variant="outlined" {...register("Codigo")} />
                         <Button type="submit" variant="contained" endIcon={<SendIcon />}> Enviar </Button>
                     </form>
                 </div>
@@ -79,13 +107,20 @@ export default function DashBoard() {
                 null
             }
 
-            {/* {EntradasVendidas.map((registro, index) => {
-                if (registro.Codigo == Codigo) {
-                    return (
-                        <Entrada clase={"entrada"} registro={registro} />
-                    )
-                }
-            })} */}
+            {/* {Codigo ?
+                <Entrada clase={"entrada titulos"} registro={{
+                    fecha: "TOTALES",
+                    General: "",
+                    B2B: "",
+                    VIP: "",
+                    "Total ingreso": "",
+                    "Porcentaje comicion": "",
+                    "Total comicion": ""
+                }}
+                />
+                :
+                null
+            } */}
         </div>
     )
 }
