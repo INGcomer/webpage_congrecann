@@ -57,7 +57,7 @@
         "facebook": "https://www.facebook.com/insativa.ar",
         "x": null,
         "img": "/imgs/Expocitores/insativa.png",
-        "show": false
+        "show": true
     },
     {
         "nombre_linea_1": "Semishop",
@@ -67,6 +67,46 @@
         "facebook": null,
         "x": null,
         "img": "/imgs/Expocitores/semishop.png",
+        "show": false
+    },
+    {
+        "nombre_linea_1": "Cultivate",
+        "nombre_linea_2": "Sustratos",
+        "web": "www.cultivatesustratos.com",
+        "instagram": "https://www.instagram.com/cultivatesustratos/",
+        "facebook": "https://www.facebook.com/cultivatesustratos",
+        "x": null,
+        "img": "/imgs/Expocitores/cultivate.png",
+        "show": false
+    },
+    {
+        "nombre_linea_1": "Anfibio",
+        "nombre_linea_2": "Semillas",
+        "web": "www.anfibiosemillas.com",
+        "instagram": "https://www.instagram.com/anfibiosemillas/",
+        "facebook": "https://www.facebook.com/profile.php?id=100073254523495",
+        "x": null,
+        "img": "/imgs/Expocitores/Anfibio.png",
+        "show": false
+    },
+    {
+        "nombre_linea_1": "Arahandseeds",
+        "nombre_linea_2": null,
+        "web": null,
+        "instagram": "https://www.instagram.com/arahandseedsargentina/",
+        "facebook": null,
+        "x": null,
+        "img": "/imgs/Expocitores/Anfibio.png",
+        "show": false
+    },
+    {
+        "nombre_linea_1": "Mars",
+        "nombre_linea_2": null,
+        "web": "www.mars.com.ar",
+        "instagram": "https://www.instagram.com/marsledsgrow/",
+        "facebook": null,
+        "x": null,
+        "img": "/imgs/Expocitores/MARS.jpg",
         "show": false
     }
 ]

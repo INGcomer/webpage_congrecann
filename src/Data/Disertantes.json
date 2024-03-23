@@ -37,5 +37,18 @@
         "x": null,
         "foto": "/imgs/Disertantes/RecetasCanameras/foto.jpg",
         "logo": null
+    },
+    {
+        "nombre": "Bryan Ramos",
+        "tipo": "Conferencia",
+        "esenario": "Escenario Industria y Cultivo",
+        "titulo": "Experiencias Sensoriales con fitocannabinoides y terpenos ",
+        "descripcion": "Explicaremos un poco sobre como con el uso adecuado de Extractos y instrumentos para vaporizar podemos crear una experiencia sensorial.",
+        "web": "www.riccioli.cl",
+        "instagram": "https://www.instagram.com/bryanramost/",
+        "facebook": null,
+        "x": "",
+        "foto": "/imgs/Disertantes/Bryan.jpg",
+        "logo": null
     }
 ]
