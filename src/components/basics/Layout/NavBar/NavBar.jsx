@@ -25,7 +25,7 @@ import LOGO from './imgs/logo_oscuro.svg'
 // const pages = ['Products', 'Pricing', 'Blog'];
 const pages = [
   {texto: 'Ser Expositor', link:'/expocitores'},
-  {texto: 'Prensa', link:'https://drive.google.com/drive/folders/1mKhbZUikeKskgQl0pxv3UO3r0NF6och5?usp=sharing'}
+  {texto: 'Kit de Prensa', link:'https://drive.google.com/drive/folders/1mKhbZUikeKskgQl0pxv3UO3r0NF6och5?usp=sharing'}
 ];
 
 function ResponsiveAppBar() {
