@@ -114,3 +114,17 @@
     align-items: center;
     justify-content: center;
 }
+
+
+
+@media (max-width: 500px) {
+    .Expocitores {
+        padding: 0px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .Expocitores h1{
+        font-size: 2rem;
+    }
+}
