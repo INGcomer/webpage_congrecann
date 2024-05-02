@@ -20,8 +20,8 @@ export default function Entradas({ReactPixel}) {
                     <p>
                     Sumérgete en el vibrante mundo del cannabis. Accede a todos los rincones de la Expo MendoCann 2024, desde las últimas novedades en tecnología cannábica hasta los shows en vivo más emocionantes. Una experiencia completa para todos los amantes del cannabis
                     </p>
-                    <h4>PRECIO POR DIA: $8.500</h4>
-                    <h4>PACK 2 DIAS: $13.500</h4>
+                    <h4>PRECIO POR DIA: $9.500</h4>
+                    <h4>PACK 2 DIAS: $16.000</h4>
 
                     {/* <Button>
                         COMPRAR
@@ -36,8 +36,8 @@ export default function Entradas({ReactPixel}) {
                     <p>
                     Da un paso hacia el futuro de los negocios cannábicos con nuestra Entrada B2B. Obtén acceso exclusivo a la Plataforma B2B y a espacios diseñados para conexiones empresariales. Participa en reuniones estratégicas, establece colaboraciones y descubre oportunidades únicas en la industria.
                     </p>
-                    <h4>PRECIO POR DIA: $20.000</h4>
-                    <h4>PACK 2 DIAS: $30.000</h4>
+                    <h4>PRECIO POR DIA: $25.000</h4>
+                    <h4>PACK 2 DIAS: $35.000</h4>
 
                     {/* <Button>
                         COMPRAR
@@ -50,8 +50,8 @@ export default function Entradas({ReactPixel}) {
                 <div className="entrada">
                     <h3> Entrada VIP </h3>
                     <p>Vive la experiencia definitiva con nuestra Entrada VIP. Disfruta de todos los beneficios de la Entrada B2B, además de acceso a una jornada completa de degustaciones, almuerzos exclusivos y eventos VIP. Sumérgete en la cultura cannábica de manera única y celebra con estilo en la Expo MendoCann 2024.</p>
-                    <h4>PRECIO POR DIA: $40.000</h4>
-                    <h4>PACK 2 DIAS: $60.000</h4>
+                    <h4>PRECIO POR DIA: $48.000</h4>
+                    <h4>PACK 2 DIAS: $72.000</h4>
 
                     {/* <Button>
                         COMPRAR
