@@ -13,7 +13,7 @@ import Json from '../../../../Data/Disertantes.json'
 import Disertante from './Disertante';
 // css
 import '../Sponsors.css';
-import './Disertantes.css';
+// import './Disertantes.css';
 
 
 

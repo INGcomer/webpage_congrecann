@@ -1,0 +1,204 @@
+.disertantes {
+    /* padding: 100px; */
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    text-align: center;
+
+    background-color: var(--Acento1);
+}
+
+.disertantes .uppercontainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-evenly;
+}
+
+.disertante{
+    height: fit-content;
+    width: 600px;
+    padding: 25px;
+
+    display: flex;
+
+    background-color: var(--Principal);
+    overflow: hidden;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--Oscuro);
+
+    border-radius: 25px;
+}
+
+.disertante .fotoRedes{
+    height: 320px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.disertante .fotoRedes .foto{
+    height: 90%;
+    width: 200px;
+
+    border-radius: 20px;
+
+    color: var(--Principal);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+.disertante .fotoRedes .redes{
+    height: 10%;
+    width: 200px;
+
+    margin: 0;
+    padding: 0;
+
+    border-radius: 20px;
+
+    color: var(--Principal);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    overflow: hidden;
+}
+.disertante .fotoRedes .redes a{
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    color: var(--Oscuro);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.disertante .foto img{
+    height: auto;
+    width: 100%;
+}
+.disertante .container{
+    height: 320px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: var(--Oscuro);
+}
+.disertante .nombre{
+    height: 20%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    position: relative;
+}
+.disertante .nombre h3{
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    font-size: 1.5rem;
+}
+.disertante .nombre img{
+    height: 90%;
+    width: auto;
+
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+}
+ .disertante .disertacion{
+    height: 80%;
+    width: 100%;
+
+    border-radius: 20px;
+}
+
+.disertante .disertacion h4{
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.disertante .disertacion p{
+    margin: 20px;
+    margin-top: 0px;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 500px) {
+  .disertante{
+        height: auto;
+        width: auto;
+    
+        display: flex;
+        gap: 20px;
+
+        flex-direction: column;
+        align-items: center;
+    }
+   .disertante .container{
+        width: 300px;
+        height: 400px;
+    }
+.disertante .nombre{
+        height: 20%;
+        width: 100%;
+    
+        margin: 0;
+        padding: 0;
+    
+        display: flex;
+        flex-direction: column;
+        flex-direction: row-reverse;
+        align-items: center;
+    
+        position: relative;
+
+        text-align: center;
+    }
+.disertante .fotoRedes .foto{
+        width: 300px;
+    }
+ .disertante .fotoRedes .redes{
+        width: 300px;
+    }
+}

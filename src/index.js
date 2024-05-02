@@ -11,6 +11,7 @@ import reportWebVitals from './reportWebVitals';
 
 import Index from './components/Index/Index';
 import Expocitores from "./components/Expocitores/Expocitores";
+import Disertantes from './components/Disertantes/Disertantes';
 import VentaEntradas from './components/VentaEntradas/VentaEntradas';
 import Conferencias from './components/Actividades/Conferencias/Conferencias';
 import DashBoard from './components/DashBoard/DashBoard';
@@ -27,6 +28,8 @@ root.render(
 
         <Route path="/expocitores" element={<Expocitores />} />
         <Route path="/expositores" element={<Expocitores />} />
+
+        <Route path="/disertantes" element={<Disertantes />} />
 
         <Route path="/actividades/conferencias" element={<Conferencias />} />
 

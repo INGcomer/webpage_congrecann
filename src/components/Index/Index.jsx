@@ -42,7 +42,7 @@ export default function Index() {
 
         {/* <Expocitores /> */}
 
-        <Disertantes />
+        {/* <Disertantes /> */}
 
         <Actividades />
 
