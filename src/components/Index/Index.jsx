@@ -38,9 +38,9 @@ export default function Index() {
 
         <Header />
 
-        <Sponsors />
+        {/* <Sponsors /> */}
 
-        <Expocitores />
+        {/* <Expocitores /> */}
 
         <Disertantes />
 

@@ -1,7 +1,116 @@
 .Expocitores {
+    padding: 100px;
     padding-top: 150px;
 
     text-align: center;
 
-    /* background-color: var(--Acento1); */
+    background-color: var(--Acento1);
+}
+
+.Expocitores h1{
+    margin-top: 0;
+    font-size: 4rem;
+}
+
+.Expocitores .container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+.Expocitores .imgcontainer {
+    height: 150px;
+    width: 150px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Expocitores .imgcontainer img{
+    height: 100%;
+    /* width: 200px; */
+}
+
+.expocitor{
+    height: 200px;
+    width: 150px;
+
+    padding: 10px;
+
+    border-radius: 20px;
+
+    color: var(--Principal);
+
+    background: rgba(255, 255, 255, 0.2);
+    background: rgba(42, 52, 48, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    display: flex;
+    flex-direction: column;
+}
+
+ .expocitor h3{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.expocitor h4{
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.expocitorContainer .redes{
+    height: 10%;
+    width: 150px;
+
+    margin-top: 20px;
+
+    /* margin: 0; */
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    border-radius: 20px;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    overflow: hidden;
+}
+.expocitorContainer .redes a{
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    color: var(--Oscuro);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -34,7 +34,7 @@ export default function Actividades() {
                         Descubre las claves de la industria del cannabis con expertos destacados.
                         {/* <button className='saverMas'>Saber más</button> */}
                         {/* <Button link="/actividades/conferencias"> Saber más </Button> */}
-                        <Button> Saber más </Button>
+                        {/* <Button> Saber más </Button> */}
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@ export default function Actividades() {
                         <PeopleIcon/>
                         <h3> Foros de Debate </h3>
                         Perspectivas que contribuyen al futuro del cannabis en Argentina.
-                        <Button> Saber más </Button>
+                        {/* <Button> Saber más </Button> */}
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@ export default function Actividades() {
                         <HandshakeIcon/>
                         <h3> Plataforma B2B </h3>
                         Maximiza oportunidades de negocio y lleva tu empresa al siguiente nivel.
-                        <Button> Saber más </Button>
+                        {/* <Button> Saber más </Button> */}
                     </div>
                 </div>
 
@@ -94,7 +94,7 @@ export default function Actividades() {
                         <MusicNoteIcon/>
                         <h3> Shows en Vivo y Eventos Culturales </h3>
                         Sunset, DJ’s, actividades al aire libre y muchas sorpresas más.
-                        <Button> Saber más </Button>
+                        {/* <Button> Saber más </Button> */}
                     </div>
                 </div>
 
