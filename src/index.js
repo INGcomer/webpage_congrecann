@@ -15,6 +15,7 @@ import Disertantes from './components/Disertantes/Disertantes';
 import VentaEntradas from './components/VentaEntradas/VentaEntradas';
 import Conferencias from './components/Actividades/Conferencias/Conferencias';
 import DashBoard from './components/DashBoard/DashBoard';
+import B2B from './components/B2B/B2B';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,6 +35,8 @@ root.render(
         <Route path="/actividades/conferencias" element={<Conferencias />} />
 
         <Route path="/dashboard" element={<DashBoard />} />
+
+        <Route path="/B2B" element={<B2B />} />
 
         <Route
           path="/venta-entradas"

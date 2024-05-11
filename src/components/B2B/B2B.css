@@ -1,0 +1,64 @@
+.B2B {
+    background-color: var(--Acento1);
+
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.B2B .navbar {
+    /* background-color: var(--Principal); */
+    width: 100%;
+    height: 80px;
+
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+
+    /* From https://css.glass */
+    /* background: rgba(255, 255, 255, 0.2); */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.B2B .navbar .navbarItem {
+    width: 25%;
+    height: 100%;
+
+    border-color: var(--Oscuro);
+    color: var(--Oscuro);
+    /* background-color: #E4AB0A; */
+    border-style: solid;
+    border-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.B2B .navbar .navbarItem .indicador {
+    width: 100%;
+    height: 5px;
+
+    margin-bottom: 10px;
+
+    background-color: transparent;
+}
+
+.B2B .navbar .navbarItem .indicador.activado {
+    background-color: #E4AB0A;
+}
