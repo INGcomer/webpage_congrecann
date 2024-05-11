@@ -18,6 +18,7 @@ import withReactContent from 'sweetalert2-react-content'
 import BaseLayout from "../basics/Layout/Layout";
 import ListaScreen from './componentes/Lista/Lista';
 import ReunionesScreen from './componentes/Reuniones/Reuniones';
+import PerfilScreen from './componentes/Perfil/Perfil';
 // CSS
 import './B2B.css';
 
@@ -72,7 +73,7 @@ export default function B2B() {
                 {Home ? <h1> home </h1> : null}
                 {Lista ? <ListaScreen/> : null}
                 {Matches ? <ReunionesScreen/> : null}
-                {Perfil ? <h1> Perfil </h1> : null}
+                {Perfil ? <PerfilScreen/> : null}
 
 
 
