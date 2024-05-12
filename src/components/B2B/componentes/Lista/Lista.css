@@ -11,6 +11,9 @@
     gap: 25px;
 
     overflow: scroll;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .Lista .usuario {
@@ -29,4 +32,49 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+.Lista .usuario h1{
+ text-align: center;
+ font-size: 1.6rem;
+}
+
+.Lista .usuario .fotocontainer{
+   height: 80px;
+   width: 80px;
+
+   margin-left: 25px;
+   /* margin-right: 70px; */
+
+   background-color: red;
+
+   border-radius: 50%;
+
+   overflow: hidden;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.Lista .usuario .fotocontainer img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover
+}
+
+.Lista .usuario .data{
+   height: 100%;
+   width: 70%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   text-align: center;
 }
