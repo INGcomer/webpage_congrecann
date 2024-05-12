@@ -25,6 +25,7 @@
     "sweetalert2": "^11.7.31",
     "sweetalert2-react-content": "^5.0.7",
     "swiper": "^10.3.1",
+    "universal-cookie": "^7.1.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

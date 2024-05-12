@@ -10,6 +10,38 @@
     justify-content: center;
 }
 
+.B2BLogin {
+    background-color: var(--Acento1);
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.B2BLogin form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.B2BLogin form button{
+    background-color: transparent;
+    border-style: none;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .B2B .navbar {
     /* background-color: var(--Principal); */
     width: 100%;
