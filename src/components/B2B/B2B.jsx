@@ -16,6 +16,7 @@ import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content'
 // components
 import BaseLayout from "../basics/Layout/Layout";
+import ResponsiveAppBar from '../basics/Layout/NavBar/NavBar';
 import ListaScreen from './componentes/Lista/Lista';
 import ReunionesScreen from './componentes/Reuniones/Reuniones';
 import PerfilScreen from './componentes/Perfil/Perfil';
@@ -68,7 +69,8 @@ export default function B2B() {
 
 
     return (
-        // <BaseLayout>
+        <>
+        <ResponsiveAppBar/>
             <div className="B2B">
                 {Home ? <h1> home </h1> : null}
                 {Lista ? <ListaScreen/> : null}
@@ -102,6 +104,6 @@ export default function B2B() {
                 </div>
 
             </div>
-        // </BaseLayout>
+        </>
     )
 }
