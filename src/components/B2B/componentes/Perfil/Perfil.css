@@ -14,6 +14,11 @@
     align-items: center;
 }
 
+.Perfil button {
+    background-color: transparent;
+    border-style: none;
+}
+
 .Perfil .data .FotoContainer{
     height: 200px;
     width: 200px;
@@ -21,4 +26,14 @@
     background-color: red;
 
     border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.Perfil .data .FotoContainer img{
+    width: 100%;
 }
