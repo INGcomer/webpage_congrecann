@@ -35,6 +35,7 @@ export default function B2BLogIn() {
         MySwal.fire({
             didOpen: () => { Swal.showLoading() }
         })
+        console.log(BackendURL('/MatchAle/GetPerfil'))
         axios({
             method: 'post',
             url: BackendURL('/MatchAle/GetPerfil'),
@@ -48,7 +49,7 @@ export default function B2BLogIn() {
             cookies.set('codigo', response.data.codigo);
 
             MySwal.close()
-            
+
             // redirijo al usuario
             navigate("/B2B")
 
