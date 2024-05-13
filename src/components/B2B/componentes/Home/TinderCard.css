@@ -1,0 +1,93 @@
+.TinderCardComponent {
+    position: relative;
+    background-color: var(--Principal);
+    /* background-color: #000000; */
+
+    height: 600px;
+    width: 400px;
+
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+
+    overflow: hidden;
+}
+
+.TinderCardComponent .usuario{
+    height: 100px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    background-color: var(--Oscuro);
+
+    display: flex;
+    align-items: center;
+
+    font-size: 1.2rem;
+}
+
+.TinderCardComponent .usuario .fotocontainer{
+    height: 80px;
+    width: 80px;
+
+    margin-right: 25px;
+
+    border-radius: 50%;
+
+    background-color: red;
+
+    overflow: hidden;
+}
+
+.TinderCardComponent .usuario .fotocontainer img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover
+}
+
+.TinderCardComponent .usuario .data{
+    height: 100%;
+    /* width: 40%; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: var(--Principal);
+}
+
+.TinderCardComponent .empresa{
+    height: 100%;
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TinderCardComponent .empresa .imgContainer{
+    height: 200px;
+    width: 200px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+.TinderCardComponent .empresa img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover
+}
+
+.TinderCardComponent .empresa span, .TinderCardComponent .empresa p{
+    width: 90%;
+}

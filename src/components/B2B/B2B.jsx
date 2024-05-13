@@ -20,6 +20,8 @@ import ResponsiveAppBar from '../basics/Layout/NavBar/NavBar';
 import ListaScreen from './componentes/Lista/Lista';
 import ReunionesScreen from './componentes/Reuniones/Reuniones';
 import PerfilScreen from './componentes/Perfil/Perfil';
+import HomeScreen from './componentes/Home/Home';
+// import Dashboard from './componentes/Home/TinderCard';
 // CSS
 import './B2B.css';
 
@@ -72,7 +74,8 @@ export default function B2B() {
         <>
         <ResponsiveAppBar/>
             <div className="B2B">
-                {Home ? <h1> home </h1> : null}
+                {Home ? <HomeScreen/> : null}
+                {/* {Home ? <Dashboard/> : null} */}
                 {Lista ? <ListaScreen/> : null}
                 {Matches ? <ReunionesScreen/> : null}
                 {Perfil ? <PerfilScreen/> : null}
