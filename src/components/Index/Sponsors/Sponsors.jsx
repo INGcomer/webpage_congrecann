@@ -27,28 +27,7 @@ export default function Sponsors() {
     }, [])
     return (
         <section id='Sponsors'>
-            <h2> Nos acompañan: </h2>
-
-            <Swiper
-                slidesPerView={CantidadSlides}
-                spaceBetween={30}
-                loop={true}
-                // pagination={{
-                //     clickable: true,
-                // }}
-                modules={[Autoplay, Pagination]}
-                className="mySwiper"
-                autoplay={{
-                    delay: 6000,
-                    disableOnInteraction: false,
-                }}
-            >
-                <SwiperSlide> <img className='sponsord' src={Criolla} alt="" /> </SwiperSlide>
-                <SwiperSlide> <img className='sponsord' src={StrechArt} alt="" /> </SwiperSlide>
-                <SwiperSlide> <img className='sponsord' src={Multitudes} alt="" /> </SwiperSlide>
-                <SwiperSlide> <img className='sponsord' src={ingcome} alt="" /> </SwiperSlide>
-                <SwiperSlide> <img className='sponsord' src={ohcho} alt="" /> </SwiperSlide>
-            </Swiper>
+            
         </section>
     );
 }

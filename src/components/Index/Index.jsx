@@ -11,6 +11,7 @@ import Actividades from './Actividades/Actividades';
 import TextoIntermedio from './TextoIntermedio/TextoIntermedio';
 import Expocitores from './Sponsors/Expocitores';
 import Disertantes from './Sponsors/Disertantes/Disertantes';
+import NewHeader from './Header/NewHeader';
 // MUI
 import InstagramIcon from '@mui/icons-material/Instagram';
 // css
@@ -36,17 +37,19 @@ export default function Index() {
       <div className="Index">
         {/* <NavBar/> */}
 
-        <Header />
+        <NewHeader/>
 
-        {/* <Sponsors /> */}
+        {/* <Header /> */}
+
+        <Sponsors />
 
         {/* <Expocitores /> */}
 
         {/* <Disertantes /> */}
 
-        <Actividades />
+        {/* <Actividades /> */}
 
-        <Entradas ReactPixel={ReactPixel}/>
+        {/* <Entradas ReactPixel={ReactPixel}/> */}
 
         {/* <Contador/> */}
 
