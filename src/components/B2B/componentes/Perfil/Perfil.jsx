@@ -1,11 +1,13 @@
 // React
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 // Axios
 import axios from "axios";
-// router
-import { useNavigate } from "react-router-dom";
 // cookies
 import Cookies from 'universal-cookie';
+// Sweet Alert
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content'
 // functions
 import { BackendURL } from '../../../../Config';
 // componentes
@@ -19,6 +21,8 @@ export default function PerfilScreen() {
     const cookies = new Cookies();
     // navigation
     const navigate = useNavigate();
+    // Alerts
+    const MySwal = withReactContent(Swal)
     // data
     const [UserData, SetUserData] = useState();
     const [UserToken, SetUserToken] = useState(cookies.get('codigo'));
@@ -26,6 +30,9 @@ export default function PerfilScreen() {
     console.log(UserToken)
 
     useEffect(() => {
+        MySwal.fire({
+            didOpen: () => { Swal.showLoading() }
+        })
         axios({
             method: 'post',
             // url: 'http://192.168.0.14:3000/MatchAle/GetPerfil',
@@ -39,6 +46,8 @@ export default function PerfilScreen() {
             SetUserData(response.data)
 
             console.log(response.data)
+
+            MySwal.close()
 
         }).catch(function (error) {
 

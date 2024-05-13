@@ -4,6 +4,9 @@ import React, { useState, useEffect } from 'react';
 import axios from "axios";
 // cookies
 import Cookies from 'universal-cookie';
+// Sweet Alert
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content'
 // functions
 import { BackendURL } from '../../../../Config';
 // CSS
@@ -13,11 +16,16 @@ import './Lista.css';
 export default function ListaScreen() {
     // cookies
     const cookies = new Cookies();
+    // Alerts
+    const MySwal = withReactContent(Swal)
     // data
     const [UserToken, SetUserToken] = useState(cookies.get('codigo'));
     const [AllUsersDataLocal, SetAllUsersDataLocal] = useState();
 
     useEffect(() => {
+        MySwal.fire({
+            didOpen: () => { Swal.showLoading() }
+        })
         axios({
             method: 'get',
             url: BackendURL('/MatchAle/GetAllUsers'),
@@ -115,7 +123,7 @@ export default function ListaScreen() {
 
             SetAllUsersDataLocal(sinValorar_Likes_Dislikes)
 
-            console.log(sinValorar_Likes_Dislikes)
+            MySwal.close()
 
         }).catch(function (error) {
             console.log(error);
@@ -145,7 +153,7 @@ function Usuario({ data }) {
 
     } else {
         return (
-            <div className='usuario'>
+            <div className={`usuario ${data.like && "like"}`}>
                 <div className="fotocontainer">
                     <img src={BackendURL(`/imgs/MatchAle/${data.usuario.foto}.png`)} alt="" />
                 </div>

@@ -33,7 +33,6 @@ export default function B2BLogIn() {
 
     const onSubmit = (data) => {
 
-        console.log(data)
         axios({
             method: 'post',
             url: BackendURL('/MatchAle/GetPerfil'),

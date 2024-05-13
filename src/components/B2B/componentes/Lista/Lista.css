@@ -37,6 +37,16 @@
     justify-content: center;
 
     text-align: center;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--Principal);
+}
+.Lista .usuario.like{
+    border-color: #B3E41D;
+}
+.Lista .usuario.false{
+    border-color: #EE4125;
 }
 .Lista .usuario h1{
  text-align: center;

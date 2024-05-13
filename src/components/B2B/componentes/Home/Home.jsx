@@ -4,6 +4,9 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import axios from "axios";
 // cookies
 import Cookies from 'universal-cookie';
+// Sweet Alert
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content'
 // components
 import TinderCard from 'react-tinder-card'
 import TinderCardComponent from './TinderCard';
@@ -18,6 +21,8 @@ import './Home.css';
 export default function HomeScreen() {
     // cookies
     const cookies = new Cookies();
+    // Alerts
+    const MySwal = withReactContent(Swal)
 
     const [UserToken, SetUserToken] = useState(cookies.get('codigo'));
     const [AllUsersData, SetAllUsersData] = useState();
@@ -25,6 +30,9 @@ export default function HomeScreen() {
     const [OnLoading, SetOnLoading] = useState(false);
 
     useEffect(() => {
+        MySwal.fire({
+            didOpen: () => { Swal.showLoading() }
+        })
         axios({
             method: 'get',
             url: BackendURL('/MatchAle/GetAllUsers'),
@@ -95,12 +103,14 @@ export default function HomeScreen() {
 
             SetAllUsersData(nuevoOrden)
 
+            MySwal.close()
+
         }).catch(function (error) {
             console.log(error);
         });
     }, []);
 
-    
+
     return (
         <div className="Home">
 

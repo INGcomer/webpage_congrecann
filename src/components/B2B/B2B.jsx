@@ -1,32 +1,39 @@
 // React
-import React, { useState } from 'react';
-import { useForm } from "react-hook-form";
-// MUI
-import TextField from '@mui/material/TextField';
-import { alpha, styled } from '@mui/material/styles';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 // MUI icons
 import HomeIcon from '@mui/icons-material/Home';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import PersonIcon from '@mui/icons-material/Person';
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
-// axios
-import axios from "axios";
-// Sweet Alert
-import Swal from 'sweetalert2';
-import withReactContent from 'sweetalert2-react-content'
+// cookies
+import Cookies from 'universal-cookie';
 // components
-import BaseLayout from "../basics/Layout/Layout";
 import ResponsiveAppBar from '../basics/Layout/NavBar/NavBar';
 import ListaScreen from './componentes/Lista/Lista';
 import ReunionesScreen from './componentes/Reuniones/Reuniones';
 import PerfilScreen from './componentes/Perfil/Perfil';
 import HomeScreen from './componentes/Home/Home';
-// import Dashboard from './componentes/Home/TinderCard';
 // CSS
 import './B2B.css';
 
 
 export default function B2B() {
+    // cookies
+    const cookies = new Cookies();
+    // navigation
+    const navigate = useNavigate();
+
+    const [UserToken, SetUserToken] = useState(cookies.get('codigo'));
+
+    useEffect(() => {
+        if (!UserToken) {
+            // redirijo al usuario
+            navigate("/B2B/LogIn")
+        }
+    }, [UserToken]);
+
+
     const [Home, SetHome] = useState(true);
     const [Lista, SetLista] = useState(false);
     const [Matches, SetMatches] = useState(false);
@@ -72,16 +79,12 @@ export default function B2B() {
 
     return (
         <>
-        <ResponsiveAppBar/>
+            <ResponsiveAppBar />
             <div className="B2B">
-                {Home ? <HomeScreen/> : null}
-                {/* {Home ? <Dashboard/> : null} */}
-                {Lista ? <ListaScreen/> : null}
-                {Matches ? <ReunionesScreen/> : null}
-                {Perfil ? <PerfilScreen/> : null}
-
-
-
+                {Home ? <HomeScreen /> : null}
+                {Lista ? <ListaScreen /> : null}
+                {Matches ? <ReunionesScreen /> : null}
+                {Perfil ? <PerfilScreen /> : null}
 
                 <div className="navbar">
                     <div className="navbarItem home" onClick={() => CambiarBoton('home')}>

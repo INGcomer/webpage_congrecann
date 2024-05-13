@@ -4,6 +4,9 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import axios from "axios";
 // cookies
 import Cookies from 'universal-cookie';
+// Sweet Alert
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content'
 // components
 import TinderCard from 'react-tinder-card'
 import TinderCardComponent from './TinderCard';
@@ -17,6 +20,8 @@ import './Home.css';
 export default function CardContainer({ AllUsersData }) {
     // cookies
     const cookies = new Cookies();
+    // Alerts
+    const MySwal = withReactContent(Swal)
 
     const [UserToken, SetUserToken] = useState(cookies.get('codigo'));
 
@@ -52,6 +57,10 @@ export default function CardContainer({ AllUsersData }) {
             codigoLike: nameToDelete,
         }
 
+        MySwal.fire({
+            didOpen: () => { Swal.showLoading() }
+        })
+
         if (direction == 'left') {
             axios({
                 method: 'post',
@@ -61,16 +70,11 @@ export default function CardContainer({ AllUsersData }) {
                     "Accept": "application/json"
                 },
             }).then(function (response) {
-
-                // SetOnLoading(false)
+                MySwal.close()
 
                 console.log(response.data);
 
             }).catch(function (error) {
-
-                // SetOnLoading(false)
-
-                // Alert.alert('Pucha :(', 'Hubo un error');
 
                 console.log(error);
             });
@@ -83,19 +87,9 @@ export default function CardContainer({ AllUsersData }) {
                     "Accept": "application/json"
                 },
             }).then(function (response) {
-
-                // SetOnLoading(false)
-
-                // if (response.data.Match) {
-                //     Alert.alert('Tenes un nuevo Match! ', 'Revisa la paguina "mis reuniones" para ver a que hora es tu reunion.')
-                // }
+                MySwal.close()
 
             }).catch(function (error) {
-
-                // SetOnLoading(false)
-
-                // Alert.alert('Pucha :(', 'Hubo un error');
-
                 console.log(error);
             });
         }
