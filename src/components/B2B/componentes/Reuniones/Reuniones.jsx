@@ -5,6 +5,8 @@ import axios from "axios";
 // Sweet Alert
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content'
+// cookies
+import Cookies from 'universal-cookie';
 // functions
 import { BackendURL } from '../../../../Config';
 // CSS
@@ -14,34 +16,38 @@ import './Reuniones.css';
 export default function ReunionesScreen() {
     // Alerts
     const MySwal = withReactContent(Swal)
-   
-    // useEffect(() => {
-    //     MySwal.fire({
-    //         didOpen: () => { Swal.showLoading() }
-    //     })
-    //     axios({
-    //         method: 'post',
-    //         // url: 'http://192.168.0.14:3000/MatchAle/GetPerfil',
-    //         url: BackendURL('/MatchAle/GetPerfil'),
-    //         data: { codigo: `${UserToken}` },
-    //         headers: {
-    //             "Accept": "application/json"
-    //         },
-    //     }).then(function (response) {
+    // cookies
+    const cookies = new Cookies();
 
-    //         SetUserData(response.data)
+    const [UserToken, SetUserToken] = useState(cookies.get('codigo'));
+    const [UserData, SetUserData] = useState();
 
-    //         console.log(response.data)
+    useEffect(() => {
+        MySwal.fire({
+            didOpen: () => { Swal.showLoading() }
+        })
+        axios({
+            method: 'post',
+            url: BackendURL('/MatchAle/GetPerfil'),
+            data: { codigo: `${UserToken}` },
+            headers: {
+                "Accept": "application/json"
+            },
+        }).then(function (response) {
 
-    //         MySwal.close()
+            SetUserData(response.data)
 
-    //     }).catch(function (error) {
+            console.log(response.data)
 
-    //         // Alert.alert('Pucha :(', 'No encontramos el codigo ingresado');
+            MySwal.close()
 
-    //         console.log(error);
-    //     });
-    // }, []);
+        }).catch(function (error) {
+
+            // Alert.alert('Pucha :(', 'No encontramos el codigo ingresado');
+
+            console.log(error);
+        });
+    }, []);
 
     return (
         <div className="Reuniones">
