@@ -23,7 +23,7 @@
     height: 200px;
     width: 200px;
 
-    background-color: red;
+    background-color: var(--Oscuro);
 
     border-radius: 50%;
 

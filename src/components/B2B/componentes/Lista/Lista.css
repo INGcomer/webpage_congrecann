@@ -60,7 +60,7 @@
    margin-left: 25px;
    /* margin-right: 70px; */
 
-   background-color: red;
+   background-color: var(--Oscuro);
 
    border-radius: 50%;
 
