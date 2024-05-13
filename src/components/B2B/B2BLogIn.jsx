@@ -32,7 +32,9 @@ export default function B2BLogIn() {
     const navigate = useNavigate();
 
     const onSubmit = (data) => {
-
+        MySwal.fire({
+            didOpen: () => { Swal.showLoading() }
+        })
         axios({
             method: 'post',
             url: BackendURL('/MatchAle/GetPerfil'),
@@ -44,6 +46,9 @@ export default function B2BLogIn() {
             console.log(response.data.codigo)
 
             cookies.set('codigo', response.data.codigo);
+
+            MySwal.close()
+            
             // redirijo al usuario
             navigate("/B2B")
 
