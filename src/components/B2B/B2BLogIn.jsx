@@ -44,9 +44,7 @@ export default function B2BLogIn() {
         }).then(function (response) {
             console.log(response.data.codigo)
 
-
-            cookies.set('codigo', response.data.codigo, { path: '/' });
-
+            cookies.set('codigo', response.data.codigo);
             // redirijo al usuario
             navigate("/B2B")
 
