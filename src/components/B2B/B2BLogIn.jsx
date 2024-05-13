@@ -33,8 +33,6 @@ export default function B2BLogIn() {
 
     const onSubmit = (data) => {
 
-        // navigation.navigate('B2B')
-
         console.log(data)
         axios({
             method: 'post',
