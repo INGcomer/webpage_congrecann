@@ -25,6 +25,7 @@ import LOGO from './imgs/logo_oscuro.svg'
 // const pages = ['Products', 'Pricing', 'Blog'];
 const pages = [
   {texto: 'Entradas', link:'https://www.showstickets.ar/event/mendocann'},
+  {texto: 'B2B', link:'/B2B'},
   {texto: 'Expositores', link:'/expocitores'},
   {texto: 'Disertantes', link:'/disertantes'},
   {texto: 'Kit de Prensa', link:'https://drive.google.com/drive/folders/1mKhbZUikeKskgQl0pxv3UO3r0NF6och5?usp=sharing'}
