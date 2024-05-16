@@ -32,9 +32,9 @@ export default function B2BLogIn() {
     const navigate = useNavigate();
 
     const onSubmit = (data) => {
-        MySwal.fire({
-            didOpen: () => { Swal.showLoading() }
-        })
+        // MySwal.fire({
+        //     didOpen: () => { Swal.showLoading() }
+        // })
         console.log(BackendURL('/MatchAle/GetPerfil'))
         axios({
             method: 'post',

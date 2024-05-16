@@ -57,9 +57,9 @@ export default function CardContainer({ AllUsersData }) {
             codigoLike: nameToDelete,
         }
 
-        MySwal.fire({
-            didOpen: () => { Swal.showLoading() }
-        })
+        // MySwal.fire({
+        //     didOpen: () => { Swal.showLoading() }
+        // })
 
         if (direction == 'left') {
             axios({

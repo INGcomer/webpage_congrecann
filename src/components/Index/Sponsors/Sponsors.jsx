@@ -27,7 +27,28 @@ export default function Sponsors() {
     }, [])
     return (
         <section id='Sponsors'>
-            
+            <div className='sponsors nosAcompañan'>
+                <h2> Nos acompañan: </h2>
+                <img src="" alt="" />
+                <img src="" alt="" />
+            </div>
+            <div className='sponsors Diamante'>
+            <h2> Sponsors Diamante: </h2>
+
+            </div>
+            <div className='sponsors oro'>
+            <h2> Sponsors Oro: </h2>
+
+            </div>
+            <div className='sponsors plata'>
+            <h2> Sponsors Plata: </h2>
+            </div>
+            <div className='sponsors mediaParthners'>
+            <h2> Media Partner: </h2>
+            </div>
+            <div className='sponsors organiza'>
+            <h2> Organiza: </h2>
+            </div>
         </section>
     );
 }
