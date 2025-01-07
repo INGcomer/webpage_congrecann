@@ -34,7 +34,7 @@ export default function Expocitores() {
 
         axios({
             method: 'post',
-            url: 'https://api.sheetmonkey.io/form/sXPGJE6DTm3Zw3AwTFeCdp',
+            url: 'https://api.sheetmonkey.io/form/fEWbZnP1CACtaD722iqnEw',
             data: data
         }).then(Response => {
             MySwal.fire({         // si ocurrio algun error muestro este mensaje
@@ -92,11 +92,27 @@ export default function Expocitores() {
                     />
                     <CssTextField
                         required
+                        // type="email"
+                        id="outlined-required"
+                        label="Empresa"
+                        name="Empresa"
+                        {...register("Empresa")}
+                    />
+                    <CssTextField
+                        required
                         type="email"
                         id="outlined-required"
                         label="Email"
                         name="Email"
                         {...register("Email")}
+                    />
+                    <CssTextField
+                        required
+                        type='number'
+                        id="outlined-required"
+                        label="Teléfono"
+                        name="Teléfono"
+                        {...register("Teléfono")}
                     />
                     <CssTextField
                         required
