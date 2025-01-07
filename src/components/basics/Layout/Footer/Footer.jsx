@@ -30,7 +30,7 @@ export default function Footer() {
                     <a href="https://www.instagram.com/mendocannok/">
                         <InstagramIcon />
                     </a>
-                    <a href="https://www.linkedin.com/company/ingcome">
+                    <a href="https://www.linkedin.com/company/mendocann">
                         <LinkedInIcon />
                     </a>
                 </div>
