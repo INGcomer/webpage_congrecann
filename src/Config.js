@@ -5,5 +5,6 @@ export const BackendURL = rute => {
     //     return `https://sisabackend.herokuapp.com${rute}`
     // }
 
-    return `https://sisabackend.herokuapp.com${rute}`
+    // return `https://sisabackend.herokuapp.com${rute}`
+    return `http://192.168.100.7:3000${rute}`
 };

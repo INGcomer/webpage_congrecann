@@ -29,7 +29,7 @@ export default function Contacto({ReactPixel}) {
 
         axios({
             method: 'post',
-            url: 'https://api.sheetmonkey.io/form/pa4t2jHLzSvwYiQ3aafi7R',
+            url: 'https://api.sheetmonkey.io/form/sXPGJE6DTm3Zw3AwTFeCdp',
             data: data
         }).then(Response => {
             MySwal.fire({         // si ocurrio algun error muestro este mensaje

@@ -29,12 +29,12 @@ export default function Ubicacion({ReactPixel}) {
 
             <div className='direccion'>
                 <div className='texto'>
-                    <h3> Centro de Congresos y Exposiciones Dr. Emilio Civit </h3>
+                    <h3> Espacio Arizu </h3>
                     <small> Virgen del Carmen de Cuyo 610, M5500 Mendoza </small>
                 </div>
                 
                 <a 
-                    href="https://www.google.com/maps/place/Auditorium+Angel+Bustelo/@-32.8980824,-68.8526397,17z/data=!3m1!4b1!4m6!3m5!1s0x967e090e883d34e5:0xa7e2f899c46ce069!8m2!3d-32.8980824!4d-68.8500648!16s%2Fg%2F1tdqvrfs?entry=ttu"
+                    href="https://maps.app.goo.gl/vwGbKjL15v1BM9da9"
                     onClick={() => {ReactPixel.track('Buscar ubicación', {"Descripción": "Click en el link de google maps"})}}
                 >
                     <Button>
@@ -45,7 +45,7 @@ export default function Ubicacion({ReactPixel}) {
 
             <MapContainer
                 className='map'
-                center={[-32.8985, -68.8500]}
+                center={[-32.909640, -68.843497]}
                 zoom={15}
                 scrollWheelZoom={false}
             >
@@ -54,11 +54,14 @@ export default function Ubicacion({ReactPixel}) {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 {/* <Marker position={[-32.8980, -68.8500]} icon={icon}> */}
-                <Marker position={[-32.8973, -68.8504]}>
+                {/* <Marker position={[-32.909640, -68.843497]}> */}
+                <Marker position={[-32.90849633586943, -68.84344322386988]}>
+                
+                 
                     <Popup>
                         Centro de Congresos y Exposiciones Dr. Emilio Civit
                         <br />
-                        <a href="https://www.google.com/maps/place/Auditorium+Angel+Bustelo/@-32.8980824,-68.8526397,17z/data=!3m1!4b1!4m6!3m5!1s0x967e090e883d34e5:0xa7e2f899c46ce069!8m2!3d-32.8980824!4d-68.8500648!16s%2Fg%2F1tdqvrfs?entry=ttu"> Ver en google maps </a>
+                        <a href="https://maps.app.goo.gl/vwGbKjL15v1BM9da9"> Ver en google maps </a>
                     </Popup>
                 </Marker>
             </MapContainer>
