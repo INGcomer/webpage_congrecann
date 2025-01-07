@@ -57,9 +57,9 @@ export default function Index() {
 
         {/* <AboutUs/> */}
 
-        <Ubicacion ReactPixel={ReactPixel}/>
+        <Ubicacion/>
 
-        <Contacto ReactPixel={ReactPixel}/>
+        <Contacto/>
         {/* <Footer/> */}
 
 
