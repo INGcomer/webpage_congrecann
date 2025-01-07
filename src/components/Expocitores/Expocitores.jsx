@@ -20,15 +20,13 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 
 import expocitores from './Data'
-
+ 
 export default function Expocitores() {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     // Alerts
     const MySwal = withReactContent(Swal)
     const onSubmit = data => {
         console.log(data);
-
-        ReactPixel.track('Contactar', { "Descripción": "Respuesta en el formulario de contacto" })
 
         MySwal.fire({
             didOpen: () => { Swal.showLoading() }
