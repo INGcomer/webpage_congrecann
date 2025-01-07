@@ -21,7 +21,7 @@ export default function Contacto({ReactPixel}) {
     const onSubmit = data => {
         console.log(data);
 
-        ReactPixel.track('Contactar', {"Descripción": "Respuesta en el formulario de contacto"})
+        // ReactPixel.track('Contactar', {"Descripción": "Respuesta en el formulario de contacto"})
 
         MySwal.fire({
             didOpen: () => { Swal.showLoading() }
