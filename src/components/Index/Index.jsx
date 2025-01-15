@@ -11,7 +11,7 @@ import Actividades from './Actividades/Actividades';
 import TextoIntermedio from './TextoIntermedio/TextoIntermedio';
 import Expocitores from './Sponsors/Expocitores';
 import Disertantes from './Sponsors/Disertantes/Disertantes';
-import NewHeader from './Header/NewHeader';
+// import NewHeader from './Header/NewHeader';
 // MUI
 import InstagramIcon from '@mui/icons-material/Instagram';
 // css
@@ -37,9 +37,9 @@ export default function Index() {
       <div className="Index">
         {/* <NavBar/> */}
 
-        <NewHeader/>
+        {/* <NewHeader/> */}
 
-        {/* <Header /> */}
+        <Header />
 
         {/* <Sponsors /> */}
 
@@ -63,7 +63,7 @@ export default function Index() {
         {/* <Footer/> */}
 
 
-        <img src={textura} alt="" className='TexturaFondoGeneral' />
+        {/* <img src={textura} alt="" className='TexturaFondoGeneral' /> */}
 
         <a href="https://www.instagram.com/mendocannok/" className='instagram' onClick={() => { ReactPixel.track('Contactar', {"Descripción": "Click en el link de instagram"});  }}>
           <InstagramIcon />

@@ -1,4 +1,4 @@
-import './Header.css';
+import './newHeader.css';
 
 // import fondo from './img/mapa topografico.png'
 import papel from './img/papel.png'
