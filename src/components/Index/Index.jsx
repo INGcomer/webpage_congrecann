@@ -1,8 +1,8 @@
 // Componentes
 import BaseLayout from '../basics/Layout/Layout';
 import Header from './Header/Header';
-import Contador from './Contador/Contador';
 import Sponsors from './Sponsors/Sponsors';
+import SobreNosotros from './SobreNosotros/SobreNosotros';
 // import AboutUs from './components/AboutUs/AboutUs';
 import Entradas from './Entradas/Entradas';
 import Ubicacion from './Ubicacion/Ubicacion';
@@ -58,6 +58,8 @@ export default function Index() {
         {/* <AboutUs/> */}
 
         <Ubicacion/>
+
+        <SobreNosotros/>
 
         <Contacto/>
         {/* <Footer/> */}

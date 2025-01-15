@@ -1,0 +1,76 @@
+@import url("https://use.typekit.net/lyn4lpb.css");
+@import url("https://use.typekit.net/lyn4lpb.css");
+
+#SobreNosotros {
+    position: relative;
+    /* height: 100vh; */
+    width: 100%;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+}
+
+#SobreNosotros h1{
+    text-align: center;
+    font-family: "podium-soft-variable", sans-serif;
+    /* font-variation-settings: "wdth" 200; */
+    font-weight: 100;
+    font-size: 2rem;
+    
+    color: var(--Oscuro);
+}
+
+#SobreNosotros .imagenes{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    width: 100%;
+    margin-bottom: 50px;
+}
+#SobreNosotros .imagenes .img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+#SobreNosotros .imagenes .img small{
+    margin-top: 10px;
+    padding: 30px;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+#SobreNosotros .imagenes .img img{
+    width: 400px;
+}
+
+
+/* @media (max-width: 1400px) {} */
+
+
+@media (max-width: 500px) {
+    #SobreNosotros .imagenes{
+        margin-bottom: 50px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #SobreNosotros .imagenes .img{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    #SobreNosotros .imagenes .img img{
+        width: 300px;
+    }
+    
+}
