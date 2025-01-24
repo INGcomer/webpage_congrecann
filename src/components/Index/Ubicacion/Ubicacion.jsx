@@ -30,7 +30,7 @@ export default function Ubicacion({ReactPixel}) {
             <div className='direccion'>
                 <div className='texto'>
                     <h3> Espacio Arizu </h3>
-                    <small> Virgen del Carmen de Cuyo 610, M5500 Mendoza </small>
+                    <small> Belgrano 1322, M5504 Godoy Cruz, Mendoza </small>
                 </div>
                 
                 <a 
