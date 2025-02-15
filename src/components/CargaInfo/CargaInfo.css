@@ -1,0 +1,27 @@
+.CargaInfo{
+    height: 100%;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CargaInfo form{
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px
+}
+
+/* .CargaInfo form input{
+    width: 20%;
+} */
+.CargaInfo form button{
+    background-color: transparent;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+}

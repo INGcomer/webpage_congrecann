@@ -17,6 +17,7 @@ import Conferencias from './components/Actividades/Conferencias/Conferencias';
 import DashBoard from './components/DashBoard/DashBoard';
 import B2B from './components/B2B/B2B';
 import B2BLogIn from './components/B2B/B2BLogIn';
+import CargaInfo from './components/CargaInfo/CargaInfo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,6 +37,7 @@ root.render(
         <Route path="/actividades/conferencias" element={<Conferencias />} />
 
         <Route path="/dashboard" element={<DashBoard />} />
+        <Route path='/cargaInfo' element={<CargaInfo/>} />
 
         <Route path="/B2B" element={<B2B />} />
 
