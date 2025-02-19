@@ -12,6 +12,10 @@ import withReactContent from 'sweetalert2-react-content'
 // components
 import BaseLayout from "../basics/Layout/Layout";
 import Button from '../basics/Button/Button'
+// img Picker
+import ReactImagePickerEditor, { ImagePickerConf } from 'react-image-picker-editor';
+import 'react-image-picker-editor/dist/index.css'
+import { Buffer } from 'buffer';
 // CSS
 import './CargaInfo.css';
 
@@ -96,6 +100,36 @@ function FomrsDeInfo({ CssTextField }) {
     // Alerts
     const MySwal = withReactContent(Swal)
 
+    const [ImageSrc, setImageSrc] = useState()
+
+    // img Picker
+    const config2 = {
+        borderRadius: '8px',
+        language: 'en',
+        width: '330px',
+        height: '250px',
+        objectFit: 'contain',
+        compressInitial: null,
+        darkMode: false,
+        rtl: false
+    };
+    // const initialImage: string = '/assets/images/8ptAya.webp';
+    const initialImage = '';
+
+    // helper function: generate a new file from base64 String
+    const dataURLtoFile = (dataurl, filename) => {
+        const arr = dataurl.split(',')
+        const mime = arr[0].match(/:(.*?);/)[1]
+        const bstr = atob(arr[1])
+        let n = bstr.length
+        const u8arr = new Uint8Array(n)
+        while (n) {
+            u8arr[n - 1] = bstr.charCodeAt(n - 1)
+            n -= 1 // to make eslint happy
+        }
+        return new File([u8arr], filename, { type: mime })
+    }
+
     // Envio de actividad de cronograma
     const onSubmitCronograma = data => {
         // Abro una pantalla de carga
@@ -128,11 +162,67 @@ function FomrsDeInfo({ CssTextField }) {
             didOpen: () => { Swal.showLoading() }
         })
 
+        // creo el formData
+        const formData = new FormData()
+
+        // Si el usuario eliguio una imagen la agrego la form data
+        if (ImageSrc) {
+            // guardo el nombre de la imagen
+            const imgName = data.Disertante.nombre + '.' + ImageSrc.substring(ImageSrc.indexOf('/') + 1, ImageSrc.indexOf(';'))
+
+            const file = dataURLtoFile(ImageSrc, imgName)
+
+            // agrego la imagen al form data
+            formData.append('kk', file, file.name)
+
+            // agrego la direccion de la imagen al from data
+            formData.append('foto', `http://192.168.0.101:3000/MatchAle/img/${imgName}`)
+        }
+
+        // agrego el resto de la informacion al form data
+        formData.append('descripcion', data.Disertante.descripcion)
+        formData.append('nombre', data.Disertante.nombre)
+
+
+        formData.append('actividad_1_tipo', data.Disertante.actividades[0].tipo)
+        formData.append('actividad_1_duracion', data.Disertante.actividades[0].duracion)
+        formData.append('actividad_1_nombre', data.Disertante.actividades[0].nombre)
+        formData.append('actividad_1_descripcion', data.Disertante.actividades[0].descripcion)
+
+        if (data.Disertante.actividades[1].tipo !== '') {
+            formData.append('actividad_2_tipo', data.Disertante.actividades[1].tipo)
+            formData.append('actividad_2_duracion', data.Disertante.actividades[1].duracion)
+            formData.append('actividad_2_nombre', data.Disertante.actividades[1].nombre)
+            formData.append('actividad_2_descripcion', data.Disertante.actividades[1].descripcion)
+        }
+
+
+        if (data.Disertante.facebook !== '') {
+            formData.append('facebook', data.Disertante.facebook)
+        }
+        if (data.Disertante.instagram !== '') {
+            formData.append('instagram', data.Disertante.instagram)
+        }
+        if (data.Disertante.linkedin !== '') {
+            formData.append('linkedin', data.Disertante.linkedin)
+        }
+        if (data.Disertante.web !== '') {
+            formData.append('web', data.Disertante.web)
+        }
+        if (data.Disertante.x !== '') {
+            formData.append('x', data.Disertante.x)
+        }
+
+
         // Envio informacion al backend
         axios({
             method: 'post',
-            url: 'http://192.168.0.101:3000/MatchAle/SaveActividad',
-            data: data.Disertante
+            url: 'http://192.168.0.101:3000/MatchAle/SaveDisertante',
+            data: formData,
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "multipart/form-data"
+            },
         }).then(Response => {
             MySwal.fire({         // si no ocurrio algun error muestro este mensaje
                 title: <strong> Informacion Guardada </strong>,
@@ -254,13 +344,20 @@ function FomrsDeInfo({ CssTextField }) {
                     name="Descripcion del disertante"
                     {...register("Disertante.descripcion")}
                 />
-                <CssTextField
+
+                < ReactImagePickerEditor
+                    config={config2}
+                    imageSrcProp={initialImage}
+                    imageChanged={(newDataUri) => { setImageSrc(newDataUri) }}
+                />
+
+                {/* <CssTextField
                     required
                     id="outlined-required"
                     label="Foto"
                     name="Foto"
                     {...register("Disertante.foto")}
-                />
+                /> */}
                 <CssTextField
                     id="outlined"
                     label="Link a la pagina web del disertante"
@@ -354,7 +451,7 @@ function FomrsDeInfo({ CssTextField }) {
                 <button type="submit">
                     <Button > Enviar Perfil de Disertante </Button>
                 </button>
-            </form>
+            </form >
 
 
             <h2> Expositores </h2>
