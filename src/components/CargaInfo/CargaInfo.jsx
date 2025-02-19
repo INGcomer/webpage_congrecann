@@ -15,7 +15,6 @@ import Button from '../basics/Button/Button'
 // img Picker
 import ReactImagePickerEditor, { ImagePickerConf } from 'react-image-picker-editor';
 import 'react-image-picker-editor/dist/index.css'
-import { Buffer } from 'buffer';
 // CSS
 import './CargaInfo.css';
 
@@ -101,6 +100,7 @@ function FomrsDeInfo({ CssTextField }) {
     const MySwal = withReactContent(Swal)
 
     const [ImageSrc, setImageSrc] = useState()
+    const [ImageSrc2, setImageSrc2] = useState()
 
     // img Picker
     const config2 = {
@@ -238,29 +238,100 @@ function FomrsDeInfo({ CssTextField }) {
         })
     }
     const onSubmitExpositor = data => {
+        // Abro una pantalla de carga
+        MySwal.fire({
+            didOpen: () => { Swal.showLoading() }
+        })
+
         let puntaje = 0
         // Defino el puntaje
-        if (data.sponsor == 'plata') {
+        if (data.Expositor.sponsor.toLowerCase() == 'plata') {
             puntaje += 1
         }
-        if (data.sponsor == 'oro') {
+        if (data.Expositor.sponsor.toLowerCase() == 'oro') {
             puntaje += 2
         }
-        if (data.sponsor == 'diamante') {
+        if (data.Expositor.sponsor.toLowerCase() == 'diamante') {
             puntaje += 3
         }
-        if (data.stand == 'plata') {
+        if (data.Expositor.stand.toLowerCase() == 'plata') {
             puntaje += 1
         }
-        if (data.stand == 'oro') {
+        if (data.Expositor.stand.toLowerCase() == 'oro') {
             puntaje += 2
         }
-        if (data.stand == 'diamante') {
+        if (data.Expositor.stand.toLowerCase() == 'diamante') {
             puntaje += 3
         }
 
-        data.puntaje = puntaje
-        console.log(data)
+        // creo el formData
+        const formData = new FormData()
+
+        // Si el usuario eliguio una imagen la agrego la form data
+        if (ImageSrc2) {
+            // guardo el nombre de la imagen
+            const imgName = data.Expositor.nombre + '.' + ImageSrc2.substring(ImageSrc2.indexOf('/') + 1, ImageSrc2.indexOf(';'))
+
+            const file = dataURLtoFile(ImageSrc2, imgName)
+
+            // agrego la imagen al form data
+            formData.append('kk', file, file.name)
+
+            // agrego la direccion de la imagen al from data
+            formData.append('foto', `http://192.168.0.101:3000/MatchAle/img/${imgName}`)
+        }
+
+        // agrego el resto de la informacion al form data
+        formData.append('nombre', data.Expositor.nombre)
+        formData.append('rubro', data.Expositor.rubro)
+        formData.append('descripcion', data.Expositor.descripcion)
+        formData.append('sector', data.Expositor.sector)
+        formData.append('stand', data.Expositor.stand)
+        formData.append('puntaje', puntaje)
+
+
+        if ( data.Expositor.sponsor !== '') {
+            formData.append('sponsor', data.Expositor.sponsor)
+        }
+        if (data.Expositor.facebook !== '') {
+            formData.append('facebook', data.Expositor.facebook)
+        }
+        if (data.Expositor.instagram !== '') {
+            formData.append('instagram', data.Expositor.instagram)
+        }
+        if (data.Expositor.linkedin !== '') {
+            formData.append('linkedin', data.Expositor.linkedin)
+        }
+        if (data.Expositor.web !== '') {
+            formData.append('web', data.Expositor.web)
+        }
+        if (data.Expositor.x !== '') {
+            formData.append('x', data.Expositor.x)
+        }
+
+
+        // Envio informacion al backend
+        axios({
+            method: 'post',
+            url: 'http://192.168.0.101:3000/MatchAle/SaveExpositor',
+            data: formData,
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "multipart/form-data"
+            },
+        }).then(Response => {
+            MySwal.fire({         // si no ocurrio algun error muestro este mensaje
+                title: <strong> Informacion Guardada </strong>,
+                icon: 'success'
+            })
+
+            console.log(Response)
+        }).catch(error => {
+            MySwal.fire({         // si ocurrio algun error muestro este mensaje
+                title: <strong> ${error} </strong>,
+                icon: 'error'
+            })
+        })
     }
     return (
         <>
@@ -477,13 +548,21 @@ function FomrsDeInfo({ CssTextField }) {
                     name="Descripcion del Expositor"
                     {...register("Expositor.descripcion")}
                 />
-                <CssTextField
+
+                < ReactImagePickerEditor
+                    config={config2}
+                    imageSrcProp={initialImage}
+                    imageChanged={(newDataUri) => { setImageSrc2(newDataUri) }}
+                />
+
+                {/* <CssTextField
                     required
                     id="outlined-required"
                     label="Foto"
                     name="Foto"
                     {...register("Expositor.foto")}
-                />
+                /> */}
+
                 <CssTextField
                     required
                     id="outlined-required"
@@ -492,7 +571,6 @@ function FomrsDeInfo({ CssTextField }) {
                     {...register("Expositor.sector")}
                 />
                 <CssTextField
-                    required
                     id="outlined-required"
                     label="Tipo de sponsor, si tiene"
                     name="Tipo de sponsor, si tiene"
