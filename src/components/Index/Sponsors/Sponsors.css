@@ -1,5 +1,6 @@
 #Sponsors {
     padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #95B141;
 }
 
@@ -19,16 +20,21 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 50px;
+}
+#Sponsors .sponsors.nosAcompañan img{
+    height: 300px;
+    width: 300px;
 }
 #Sponsors .sponsors.Diamante img{
     height: 200px;
     width: 200px;
 }
 #Sponsors .sponsors.oro img{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
 #Sponsors .sponsors.plata img{
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
 }

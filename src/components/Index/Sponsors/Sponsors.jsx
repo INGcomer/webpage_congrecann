@@ -10,15 +10,21 @@ import { Pagination, Autoplay } from 'swiper/modules';
 // css
 import './Sponsors.css';
 // Sponsos
-import ARAHAND from './img/sponsors/ARAHAND.jpg';
+import ARAHAND from './img/sponsors/ARAHAND.png';
 import CANNECT from './img/sponsors/CANNECT.png';
 import GROWCAST from './img/sponsors/GROWCAST.png';
 import HQA from './img/sponsors/HQA.png';
 import INSATIVA from './img/sponsors/INSATIVA.png';
 import PACU from './img/sponsors/PACCU.png';
-import KCB from './img/sponsors/KCBD.jpg';
+import KCB from './img/sponsors/KCBD.png';
 import UNIVERSAL from './img/sponsors/UNIVERSAL.png';
-
+import GDSF from './img/sponsors/GDSF.png';
+import OJITOS from './img/sponsors/OJITOS.png';
+import GEOSTOCK from './img/sponsors/GEOSTOCK.png';
+import DR from './img/sponsors/DR.png';
+import GREENFIRE from './img/sponsors/GREENFIRE.png';
+import TEHACEMOS from './img/sponsors/TEHACEMOSCULTIVAR.png';
+import MENDOZA from './img/sponsors/MENDOZA.png';
 
 export default function Sponsors() {
     const [CantidadSlides, SetCantidadSlides] = useState(2)
@@ -33,7 +39,9 @@ export default function Sponsors() {
         <section id='Sponsors'>
             <div className='sponsors nosAcompañan'>
                 <h2> Nos acompañan: </h2>
-                <img src="" alt="Gobierno de Mendoza" />
+                <div className="imgs">
+                <img src={MENDOZA} alt="Gobierno de Mendoza" />
+                </div>
             </div>
             <div className='sponsors Diamante'>
                 <h2> Sponsors Diamante: </h2>
@@ -46,36 +54,36 @@ export default function Sponsors() {
             <div className='sponsors oro'>
                 <h2> Sponsors Oro: </h2>
                 <div className="imgs">
-                    <img src="" alt="Green Fire" />
-                    <img src="" alt="CTH" />
+                    <img src={GREENFIRE} alt="Green Fire" />
+                    {/* <img src="" alt="CTH" /> */}
                     <img src={CANNECT} alt="Cannect" />
                     <img src={PACU} alt="Laboratorios Paccu" />
-                    <img src="" alt="HarvestPro SA" />
-                    <img src="" alt="FECCA" />
-                    <img src="" alt="GdSF Estrategia y Estudio Jurídico" />
+                    {/* <img src="" alt="HarvestPro SA" /> */}
+                    {/* <img src="" alt="FECCA" /> */}
+                    <img src={GDSF} alt="GdSF Estrategia y Estudio Jurídico" />
                 </div>
             </div>
             <div className='sponsors plata'>
                 <h2> Sponsors Plata: </h2>
                 <div className="imgs">
+                    <img src={DR} alt="Dr Cultivo" />
                     <img src={INSATIVA} alt="Insativa" />
                     <img src={GROWCAST} alt="Growcast" />
-                    <img src="" alt="Ojitos Rojos " />
-                    <img src="" alt="Stand de Clubes" />
-                    <img src="" alt="Dr Cultivo" />
-                    <img src="" alt="Seedstockers" />
-                    <img src="" alt="Te Hacemos Cultivar" />
+                    <img src={OJITOS} alt="Ojitos Rojos " />
+                    {/* <img src="" alt="Stand de Clubes" /> */}
+                    <img src={GEOSTOCK} alt="Seedstockers" />
+                    <img src={TEHACEMOS} alt="Te Hacemos Cultivar" />
                     <img src={HQA} alt="Laboratorio HQA" />
                 </div>
             </div>
-            <div className='sponsors mediaParthners'>
+            {/* <div className='sponsors mediaParthners'>
                 <h2> Media Partner: </h2>
                 <div className="imgs">
                     <img src="" alt="Pelagatos" />
                     <img src="" alt="Marimba" />
                     <img src="" alt="Sontrip" />
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }
