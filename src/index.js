@@ -44,6 +44,12 @@ root.render(
         <Route path="/B2B/Login" element={<B2BLogIn />} />
 
         <Route
+          path="/asesoramiento"
+          element={<Redirect loc="https://asesoramiento-cannabis-m-d0xfxjf.gamma.site/" />}
+          // element={<VentaEntradas />}
+        />
+
+        <Route
           path="/venta-entradas"
           element={<Redirect loc="https://www.showstickets.ar/event/mendocann" />}
           // element={<VentaEntradas />}

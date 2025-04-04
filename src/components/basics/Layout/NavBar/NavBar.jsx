@@ -24,10 +24,11 @@ import LOGO from './imgs/logo_oscuro.svg'
 
 // const pages = ['Products', 'Pricing', 'Blog'];
 const pages = [
-  // {texto: 'Entradas', link:'https://www.showstickets.ar/event/mendocann'},
+  {texto: 'Entradas', link:'https://www.showstickets.ar/event/mendocann2025'},
   // {texto: 'B2B', link:'/B2B'},
   {texto: 'Expositores', link:'/expositores'},
-  // {texto: 'Disertantes', link:'/disertantes'},
+  {texto: 'Disertantes', link:'/disertantes'},
+  {texto: 'Asesoramiento', link:'https://asesoramiento-cannabis-m-d0xfxjf.gamma.site'},
   // {texto: 'Kit de Prensa', link:'https://drive.google.com/drive/folders/1mKhbZUikeKskgQl0pxv3UO3r0NF6och5?usp=sharing'}
 ];
 
