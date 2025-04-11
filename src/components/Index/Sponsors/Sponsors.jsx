@@ -26,6 +26,7 @@ import GREENFIRE from './img/sponsors/GREENFIRE.png';
 import TEHACEMOS from './img/sponsors/TEHACEMOSCULTIVAR.png';
 import MENDOZA from './img/sponsors/MENDOZA.png';
 import GUAYMALLEN from './img/sponsors/guaymallen.png';
+import GodoyCruz from './img/sponsors/godoycruz.png';
 
 export default function Sponsors() {
     const [CantidadSlides, SetCantidadSlides] = useState(2)
@@ -41,6 +42,7 @@ export default function Sponsors() {
             <div className='sponsors nosAcompañan'>
                 <h2> Nos acompañan: </h2>
                 <div className="imgs">
+                <img src={GodoyCruz} alt="Municipalidad de Godoy Cruz" />
                 <img src={MENDOZA} alt="Gobierno de Mendoza" />
                 <img src={GUAYMALLEN} alt="Municipalidad de Guaymallen" />
                 </div>
