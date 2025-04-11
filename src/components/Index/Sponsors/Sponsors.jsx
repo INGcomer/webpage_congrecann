@@ -25,6 +25,7 @@ import DR from './img/sponsors/DR.png';
 import GREENFIRE from './img/sponsors/GREENFIRE.png';
 import TEHACEMOS from './img/sponsors/TEHACEMOSCULTIVAR.png';
 import MENDOZA from './img/sponsors/MENDOZA.png';
+import GUAYMALLEN from './img/sponsors/guaymallen.png';
 
 export default function Sponsors() {
     const [CantidadSlides, SetCantidadSlides] = useState(2)
@@ -41,6 +42,7 @@ export default function Sponsors() {
                 <h2> Nos acompañan: </h2>
                 <div className="imgs">
                 <img src={MENDOZA} alt="Gobierno de Mendoza" />
+                <img src={GUAYMALLEN} alt="Municipalidad de Guaymallen" />
                 </div>
             </div>
             <div className='sponsors Diamante'>
